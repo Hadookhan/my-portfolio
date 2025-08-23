@@ -25,7 +25,7 @@ I list not only my technical skills, but also other fields which interest me!
 
 I have taken an agile approach for this project ->
 - Using git/github as my main repository system and version tracking method,
-- Used React as my Framework with Vite for frontend,
+- Used Next.js as my Framework with React + Vite for the frontend,
 - Applied the use of Docker to containerize project for asynchronous testing on various ports,
 - Alongside Docker, I used CI/CD to ease my development and make testing, linting and debugging quicker,
 - Using Reacts http 'GET' method to scrape my own projects for showcase and interactability on this website,

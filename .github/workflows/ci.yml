@@ -25,3 +25,14 @@ jobs:
       - name: Run tests
         run: npm test -- --passWithNoTests
 
+      - name: Lint
+        run: npm run lint --if-present
+
+      - name: Type check
+        run: npm run type-check --if-present
+
+      - name: Build project
+        run: npm run build
+        env:
+          CI: true
+

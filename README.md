@@ -5,7 +5,7 @@
 This Repo is basically a showcase of myself to present my projects, skills, hobbies, achievements, and stuff alike.
 This is a professional website.
 
-This repositary is primarily aimed towards employers, recruiters and admission staff.
+This repository is primarily aimed towards employers, recruiters and admission staff.
 However anyone is free to browse through my website:
 ![Hadi Khans Website](https://google.com)
 

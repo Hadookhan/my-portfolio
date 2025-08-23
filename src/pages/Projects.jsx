@@ -3,22 +3,22 @@ import '../css/default.css';
 import '../css/projects.css';
 
 export default function Projects() {
-    const [chessData, setChessData] = useState(null);
+    // const [chessData, setChessData] = useState(null);
 
-    useEffect(() => {
-        fetch('https://www.hadi-khan-chess.com')
-            .then(response => response.text())
-            .then(data => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(data, 'text/html');
-                const root = doc.getElementById('root');
-                const page = root?.querySelector('.page');
-                const game = page?.querySelector('.game');
-                const chessBoardHTML = game?.querySelector('.chess-board')?.innerHTML;
-                setChessData(chessBoardHTML);
-            })
-            .catch(error => console.error('Fetch error:', error));
-    }, []);
+    // useEffect(() => {
+    //     fetch('https://www.hadi-khan-chess.com')
+    //         .then(response => response.text())
+    //         .then(data => {
+    //             const parser = new DOMParser();
+    //             const doc = parser.parseFromString(data, 'text/html');
+    //             const root = doc.getElementById('root');
+    //             const page = root?.querySelector('.page');
+    //             const game = page?.querySelector('.game');
+    //             const chessBoardHTML = game?.querySelector('.chess-board')?.innerHTML;
+    //             setChessData(chessBoardHTML);
+    //         })
+    //         .catch(error => console.error('Fetch error:', error));
+    // }, []);
 
     return (
         <html>

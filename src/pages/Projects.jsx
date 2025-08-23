@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../css/default.css';
-import chess from '../assets/chess.jpg';
+import '../css/projects.css';
 
 export default function Projects() {
     const [chessData, setChessData] = useState(null);
@@ -9,29 +9,47 @@ export default function Projects() {
         fetch('https://www.hadi-khan-chess.com')
             .then(response => response.text())
             .then(data => {
-                setChessData(data); // or parse it as needed
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                const root = doc.getElementById('root');
+                const page = root?.querySelector('.page');
+                const game = page?.querySelector('.game');
+                const chessBoardHTML = game?.querySelector('.chess-board')?.innerHTML;
+                setChessData(chessBoardHTML);
             })
             .catch(error => console.error('Fetch error:', error));
     }, []);
 
     return (
-        <div className="page-content">
-            <h1 className="title">Projects</h1>
-            <ul>
-                <li>
-                    <a href="https://www.hadi-khan-chess.com" target="_blank" rel="noopener noreferrer">
-                        hadi-khan-chess.com
-                    </a>
-                    <br />
-                    <img src={chess} alt="hadi-khan-chess" />
-                    {chessData && (
-                        <div className="chess-preview">
-                            <p>Fetched data preview:</p>
-                            <pre>{chessData.slice(0, 500)}...</pre>
-                        </div>
-                    )}
-                </li>
-            </ul>
-        </div>
+        <html>
+            <head>
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <title>Document</title>
+            </head>
+            <body>
+                <h1 className="title">Projects</h1>
+                <div className="page-content">
+                    <ul>
+                        <li>
+                            <br />
+                            <div className='projects'>
+                                <div className="responsive-iframe-container">
+                                    <a href="https://www.hadi-khan-chess.com" target="_blank" rel="noopener noreferrer">
+                                        hadi-khan-chess.com
+                                    </a>
+                                    <iframe
+                                        src="https://www.hadi-khan-chess.com"
+                                        title="Chess Game"
+                                        href="https://www.hadi-khan-chess.com"
+                                    ></iframe>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </body>
+        </html>
     );
 }

@@ -30,22 +30,24 @@ export default function Projects() {
             <body>
                 <h1 className="title">Projects</h1>
                 <div className="page-content">
-                    <ul>
+                    <ul className='project-grid'>
                         <li>
-                            <br />
-                            <div className='projects'>
-                                <div className="responsive-iframe-container">
-                                    <a href="https://www.hadi-khan-chess.com" target="_blank" rel="noopener noreferrer">
-                                        hadi-khan-chess.com
-                                    </a>
-                                    <iframe
-                                        src="https://www.hadi-khan-chess.com"
-                                        title="Chess Game"
-                                        href="https://www.hadi-khan-chess.com"
-                                    ></iframe>
-                                </div>
+                            <div className="responsive-iframe-container">
+                                <iframe
+                                    src="https://www.hadi-khan-chess.com"
+                                    title="Chess Game"
+                                    href="https://www.hadi-khan-chess.com"
+                                ></iframe>
                             </div>
-
+                        </li>
+                        <li>
+                            <div className="responsive-iframe-container">
+                                <iframe
+                                    src="https://www.hadi-khan-chess.com"
+                                    title="Chess Game"
+                                    href="https://www.hadi-khan-chess.com"
+                                ></iframe>
+                            </div>
                         </li>
                     </ul>
                 </div>

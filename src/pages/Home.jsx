@@ -4,7 +4,7 @@ export default function Home() {
 
     return (
         <div className="page-content">
-            <h1 className="title">Welcome to My Portfolio</h1>
+            <h1 className="title">Home</h1>
         </div>
     );
 }

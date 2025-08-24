@@ -8,10 +8,9 @@ export default function Navbar() {
       <div className="navbar-container">
         <Link to="/" className="logo">Hadi Khan</Link>
         <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/projects" className='navItem'>PROJECTS</Link>
+          <Link to="/about" className='navItem'>ABOUT</Link>
+          <Link to="/contact" className='navItem'>CONTACT</Link>
         </div>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(154, 200, 214);
+  background-color: rgb(180, 179, 179);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.596);
   padding: 1.5rem 2rem;
   position: fixed;
@@ -8,6 +8,7 @@
   width: 100%; /* Make it span full width */
   align-content: center;
   display: flex;
+  z-index: 997;
 }
 
 
@@ -27,10 +28,11 @@
   border-top: none;
   border-right: none;
   transition: color 0.3s ease;
+  z-index: 999;
 }
 
 .logo:hover {
-  color: rgb(82, 123, 177);
+  color: rgb(219, 255, 250);
 }
 
 .nav-links a {
@@ -42,5 +44,53 @@
 }
 
 .nav-links a:hover {
-  color: rgb(82, 123, 177);
+  color: rgb(219, 255, 250);
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  margin-left: 90vw;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    margin-top: 20vh;
+    right: 0;
+    margin-right: 60px;
+
+    position: absolute;
+    background-color: rgb(180, 179, 179);
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    height: 3vw;
+  }
+
+  .logo {
+    font-size: 5vw;
+  }
+}
+

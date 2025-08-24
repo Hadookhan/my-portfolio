@@ -1,41 +1,36 @@
+body {
+    background-color:darkslategray;
+}
+
 .title {
     position: fixed;
     display: flex;
     top: 0;
-    left: 0;
-    text-decoration: underline;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 5rem;
+    color: black;
+    z-index: 999;
+    right: 0;
 }
 
 .responsive-iframe-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 370%;
-    padding-bottom: 450%; /* adjust this for aspect ratio */
-    height: 0;
-    overflow: hidden;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1 / 1.5;
+  width: 100%;
+  max-width: 400px;       /* Controls actual width */
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #ccc;
 }
 
+
+
 .responsive-iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.page-content ul {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  list-style: none;
-  justify-content: right;
-  align-items: right;
 }
 

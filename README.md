@@ -7,7 +7,7 @@ This is a professional website.
 
 This repository is primarily aimed towards employers, recruiters and admission staff.
 However anyone is free to browse through my website:
-[Hadi Khans Website](https://google.com)
+[Hadi Khans Website](https://my-portfolio-iota-wheat-54.vercel.app)
 
 ## Why did I make a website?
 

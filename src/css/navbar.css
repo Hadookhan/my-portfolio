@@ -1,11 +1,11 @@
 .navbar {
-  background-color: rgb(102, 179, 182);
-  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.596);
+  background-color: rgb(154, 200, 214);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.596);
   padding: 1.5rem 2rem;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%; /* Make it span full width */
-  z-index: 999; /* Ensure it sits above all other elements */
   align-content: center;
   display: flex;
 }
@@ -30,7 +30,7 @@
 }
 
 .logo:hover {
-  color: rgb(164, 252, 255);
+  color: rgb(82, 123, 177);
 }
 
 .nav-links a {
@@ -42,5 +42,5 @@
 }
 
 .nav-links a:hover {
-  color: rgb(164, 252, 255);
+  color: rgb(82, 123, 177);
 }

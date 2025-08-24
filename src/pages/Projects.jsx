@@ -22,7 +22,6 @@ export default function Projects() {
     // }, []);
 
     const [isOpen, setIsOpen] = useState(false);
-    const [hasHamburger, setHamburger] = useState(false);
 
     return (
         <html>

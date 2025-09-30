@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root,   /* CRA root */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+    background-color: white;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+

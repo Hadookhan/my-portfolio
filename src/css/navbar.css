@@ -1,15 +1,17 @@
+:root { --nav-h: clamp(56px, 8vw, 80px); }
+
 .navbar {
-  background-color: rgb(180, 179, 179);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.596);
-  padding: 1.5rem 2rem;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%; /* Make it span full width */
-  align-content: center;
+  height: var(--nav-h);
   display: flex;
-  z-index: 997;
+  align-items: center;
+  padding: 0 1rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 1;
 }
+
 
 
 .navbar-container {
@@ -32,7 +34,7 @@
 }
 
 .logo:hover {
-  color: rgb(219, 255, 250);
+  color: rgb(187, 54, 54);
 }
 
 .nav-links a {
@@ -44,7 +46,7 @@
 }
 
 .nav-links a:hover {
-  color: rgb(219, 255, 250);
+  color: rgb(187, 54, 54);
 }
 
 .hamburger {
@@ -70,27 +72,26 @@
   }
   .nav-links {
     display: none;
-    margin-top: 20vh;
+    margin-top: 7rem;
     right: 0;
-    margin-right: 60px;
+    font-size: 2vw;
 
     position: absolute;
-    background-color: rgb(180, 179, 179);
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
-    padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: -1;
+    padding: 0.75rem;
+    border-radius: 5px;
   }
   .nav-links.active {
     display: flex;
   }
 
   .navbar {
-    height: 3vw;
+    height: 8vw;
   }
 
   .logo {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 

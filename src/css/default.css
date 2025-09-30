@@ -1,6 +1,8 @@
 body {
-    background-color:rgb(204, 235, 255);
+    background-color:rgb(41, 41, 41);
 }
+
+.page-content { padding-top: 1rem; }
 
 .title {
     position: fixed;
@@ -48,7 +50,7 @@ body {
     justify-content: left;
     left: 0;
     margin-left: 1rem;
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 

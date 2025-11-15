@@ -40,6 +40,9 @@
   max-width: 260px;
 }
 
-.link {
+.source-link {
     color: aquamarine;
+}
+.access-link {
+    color: rgb(255, 232, 127);
 }

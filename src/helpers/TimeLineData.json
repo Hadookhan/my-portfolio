@@ -1,8 +1,25 @@
 [
     {
-        "name": "Chess Recreation",
+        "name": "Blob Game",
+        "created": "10/04/2024",
+        "links": {
+            "source": {
+                "url": "/BlobGame",
+                "text": "See more"
+            },
+            "access": {
+                "url": "https://github.com/Hadookhan/blob/releases/download/latest/blob-main.zip",
+                "text": "Download"
+            }
+        },
+        "category": {
+            "tag": "Finished",
+            "colour": "#018f69"
+        }
+    },
+    {
+        "name": "Chess",
         "created": "10/08/2024",
-        "desc": "My own recreation of Chess",
         "links": {
             "source": {
                 "url": "/ChessGame",
@@ -14,17 +31,30 @@
             }
         },
         "category": {
-            "tag": "medium",
+            "tag": "Finished",
+            "colour": "#018f69"
+        }
+    },
+    {
+        "name": "This Website (portfolio)",
+        "created": "03/05/2025",
+        "links": {
+            "source": {
+                "url": "/PortfolioSite",
+                "text": "See more"
+            }
+        },
+        "category": {
+            "tag": "Finished",
             "colour": "#018f69"
         }
     },
     {
         "name": "File Organiser",
         "created": "12/11/2025",
-        "desc": "Organises files based on file extension",
         "links": {
             "source": {
-                "url": "/FileOrganizer",
+                "url": "/FileOrganiser",
                 "text": "See more"
             },
             "access": {
@@ -33,7 +63,7 @@
             }
         },
         "category": {
-            "tag": "medium",
+            "tag": "Finished",
             "colour": "#018f69"
         }
     }

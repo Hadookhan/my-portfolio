@@ -25,6 +25,9 @@
   font-style: oblique;
   font-weight: bold;
   color:black;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .projectButton:hover {
@@ -52,7 +55,7 @@
   transition: all 1 ease-in-out;
 }
 
-.display-project.active {
+/* .display-project.active {
   opacity: 1;
   z-index: 995;
 }
@@ -71,4 +74,4 @@
   align-content: center;
   text-align: center;
   font-size: 6vw;
-}
+} */

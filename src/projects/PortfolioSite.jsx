@@ -1,7 +1,7 @@
 import '../css/default.css';
 import '../css/projects.css';
 
-export default function PortoflioSite() {
+export default function PortfolioSite() {
 
     return (
         <div>

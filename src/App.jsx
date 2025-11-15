@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import ChessGame from './projects/ChessGame';
 import BlobGame from './projects/BlobGame';
 import FileOrganiser from './projects/FileOrganiser';
-import PortoflioSite from './projects/PorfolioSite';
+import PortoflioSite from './projects/PortfolioSite';
 
 function App() {
   return (
@@ -16,13 +16,13 @@ function App() {
     <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Projects/ChessGame" element={<ChessGame />} />
-          <Route path="/Projects/BlobGame" element={<BlobGame />} />
-          <Route path="/Projects/FileOrganiser" element={<FileOrganiser />} />
-          <Route path="/Projects/PortfolioSite" element={<PortoflioSite />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects/chessGame" element={<ChessGame />} />
+          <Route path="/projects/blobGame" element={<BlobGame />} />
+          <Route path="/projects/fileOrganiser" element={<FileOrganiser />} />
+          <Route path="/projects/portfolioSite" element={<PortoflioSite />} />
         </Routes>
     <Footer></Footer>
     </>

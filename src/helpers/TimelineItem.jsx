@@ -5,7 +5,7 @@ function TimelineItem({ data }) {
     <div className="timeline-item">
       <div className="timeline-item-content">
         <span className="tag" style={{ background: data.category.colour }}>
-          {data.category.tag}
+          {data.category.tag} 
         </span>
         <time>{data.created}</time>
         <p>{data.name}</p>
@@ -16,7 +16,7 @@ function TimelineItem({ data }) {
               href={window.location.href + data.links.source.url}
               target="_blank"
               rel="noopener noreferrer"
-              className='link'
+              className='source-link'
             >
               {data.links.source.text}
             </a>
@@ -29,7 +29,7 @@ function TimelineItem({ data }) {
               href={data.links.access.url}
               target="_blank"
               rel="noopener noreferrer"
-              className='link'
+              className='access-link'
             >
               {data.links.access.text}
             </a>

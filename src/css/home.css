@@ -1,0 +1,31 @@
+.intro {
+    color: white;
+    font-size: 40px;
+    font-display: block;
+    text-align: center;
+}
+
+.intro2 {
+    color: white;
+    font-size: 30px;
+    font-display: block;
+    text-align: center;
+}
+
+h2.introHead {
+    color: aliceblue;
+    font-size: 70px;
+    font-display: block;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.homeLinks {
+    color: aquamarine;
+}
+
+@media(max-width: 900px) {
+
+}

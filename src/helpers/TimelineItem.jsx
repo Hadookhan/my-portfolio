@@ -1,4 +1,5 @@
 import '../css/timelineitem.css';
+import { Link } from 'react-router-dom';
 
 function TimelineItem({ data }) {
   return (
@@ -12,14 +13,12 @@ function TimelineItem({ data }) {
 
         {data.links?.source && (
           <p>
-            <a
-              href={window.location.href + data.links.source.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className='source-link'
+            <Link
+              to={data.links.source.url}
+              className="source-link"
             >
               {data.links.source.text}
-            </a>
+            </Link>
           </p>
         )}
 

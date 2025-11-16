@@ -37,10 +37,12 @@ export default function ChessGame() {
                 theoretical knowledge into this project, like OOP and what algorithms to use. 
                 This was also the first project I tracked with Github, since this was soon 
                 after learning Git from the <a className="homeLinks" href='https://www.Boot.dev'>BootDev</a> course. 
+                Also, from this project I learnt how to deploy web servers using <a className="homeLinks" href='https://vercel.com'>Vercel</a> and
+                backend API's using <a className="homeLinks" href='https://render.com'>Render</a>.
                 Still, there was a lot of improvements that could have been made to this project. 
                 Nonetheless, a massive improvement from the <Link className="homeLinks" to='/projects/blobGame'>Blob Game</Link>.<br></br> 
-                <b>PS:</b> The backend service sometimes takes 1-2 minutes to bootup due to inactivity, 
-                which causes the chess board to take a while to render in. 
+                <b>PS: The backend service sometimes takes 1-2 minutes to bootup due to inactivity, 
+                which causes the chess board to take a while to render in.</b>
                 </p>
 
                 <h3 className="head2">Extras</h3>

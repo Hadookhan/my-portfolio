@@ -31,8 +31,8 @@
             }
         },
         "category": {
-            "tag": "Finished",
-            "colour": "#018f69"
+            "tag": "WIP",
+            "colour": "#f59b42"
         }
     },
     {
@@ -45,8 +45,8 @@
             }
         },
         "category": {
-            "tag": "Finished",
-            "colour": "#018f69"
+            "tag": "WIP",
+            "colour": "#f59b42"
         }
     },
     {

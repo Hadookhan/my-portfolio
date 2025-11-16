@@ -33,8 +33,8 @@ export default function About() {
                     <br></br><br></br>
                     A few months later, I signed up to my first course (<i><a className="homeLinks" href='https://www.Boot.dev'>BootDev</a></i>). This is
                     where I really begun my programming journey. I was investing hours every day programming, 
-                    and finally learning theory. Despite learning stuff that even I found basic, I persisted 
-                    and reinforced that knowledge, and soon enough I was learning topics I never crossed 
+                    and finally learning theory. Despite learning stuff that I found basic, I persisted 
+                    and reinforced that knowledge, and soon enough I was learning topics I had never crossed 
                     before. It was by this time I decided to start my next project (<i><Link className="homeLinks" to='/projects/chessGame'>Chess</Link></i>).
                     <br></br><br></br>
                     Also, at this time I was learning algorithms, and didn't realise their importance 
@@ -93,6 +93,11 @@ export default function About() {
                     </li>
                     <li>
                         <p className='intro3'>Certified First Aid License (2023)</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>
+                            <a className="homeLinks" href='https://api.boot.dev/v1/users/public/39da1ec4-2b32-496e-830a-c99ecb6b38f7/thumbnail'>BootDev Profile Card</a>
+                        </p>
                     </li>
                 </ul>
 

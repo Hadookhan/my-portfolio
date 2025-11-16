@@ -56,6 +56,22 @@
 .homeLinks {
     color: aquamarine;
 }
+.contactLinks {
+    color: coral;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
 
 @media(max-width: 900px) {
 

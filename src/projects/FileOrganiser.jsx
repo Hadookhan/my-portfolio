@@ -60,6 +60,9 @@ export default function FileOrganiser() {
                                 <p className='intro3'>YAML Files</p>
                             </li>
                             <li>
+                                <p className='intro3'>Regular Expressions (Regex)</p>
+                            </li>
+                            <li>
                                 <p className='intro3'>Visual Studio 2022</p>
                             </li>
                             <li>

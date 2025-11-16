@@ -7,6 +7,7 @@ function Projects() {
     <div>
       <h1 className="title">Projects</h1>
       <div className="page-content">
+        <h2 className="proj-timeline-title">Project Timeline</h2>
         <TimeLine />
 
         <ul className="project-grid">

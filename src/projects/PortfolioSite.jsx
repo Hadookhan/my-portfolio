@@ -28,8 +28,9 @@ export default function PortfolioSite() {
                         This was also the first project I used alongside Docker, and also
                         error checked/autodeployed using CICD. I also learned this from the 
                         <a href='https://www.Boot.dev'>BootDev</a> course. I implemented this
-                        only to show that I could apply it, as its more of an industry standard
-                        to automate deployment processes.
+                        only to show that I could apply it, however autodeployment is really
+                        useful for me as whenever I introduce a new implementation, each git push
+                        automatically hosts the new version of the website.
                     </p>
                 </div>
 

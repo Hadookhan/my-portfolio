@@ -19,10 +19,10 @@ Learn more about me [here](https://www.hadi-khan.com/about)!
 
 - All my projects listed in chronological order from when I first began development,
 - A Project description,
-- A image or interactable version of the project,
+- An image or interactable version of the project,
 - A self reflection piece,
 - A list of valuable skills I earned,
-- Links to project and its source code.
+- Links to the project and its source code.
 
 # About THIS project (my personal website)
 

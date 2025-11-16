@@ -33,6 +33,20 @@ export default function BlobGame() {
                     interest in programming. Shortly after this project I joined bootcamp 
                     courses and relearned everything from scratch. 
                 </p>
+
+                <h3 className="head2">Skills gained/reinforced:</h3>
+                <ul className='intro3'>
+                    <li>
+                        <p className='intro3'>Python</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>Pygame</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>2D game development</p>
+                    </li>
+                </ul>
+
                 <h3 className="head2">Extras</h3>
                 <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/blob/releases/download/latest/blob-main.zip'>here</a> to download the Blob Game</p>
                 <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/blob'>here</a> to view the source code on Github</p>

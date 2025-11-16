@@ -10,6 +10,7 @@ function Projects() {
         <h2 className="proj-timeline-title">Project Timeline</h2>
         <TimeLine />
 
+        <h2 className="proj-timeline-title">Top Projects</h2>
         <ul className="project-grid">
           {/* project cards go here later */}
         </ul>

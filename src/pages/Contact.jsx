@@ -8,6 +8,7 @@ import facebookLogo from '../assets/facebookLogo.png';
 import redditLogo from '../assets/redditLogo.png';
 import leetcodeLogo from '../assets/leetcodeLogo.png';
 import bootdevLogo from '../assets/bootdevLogo.png';
+import xLogo from '../assets/xLogo.png';
 
 export default function Contact() {
 
@@ -76,6 +77,18 @@ export default function Contact() {
                             href="https://www.reddit.com/user/EnoughTourist1814"
                             >
                             reddit.com/user/EnoughTourist1814
+                            </a>
+                        </p>
+                    </div>
+                    <div className="contact-row">
+                        <img src={xLogo} alt="X" className="contact-icon" />
+                        <p className="intro2">
+                            X (Twitter) -{" "}
+                            <a
+                            className="contactLinks"
+                            href="https://x.com/Hadi_05_"
+                            >
+                            x.com/Hadi_05_
                             </a>
                         </p>
                     </div>

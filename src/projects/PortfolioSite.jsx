@@ -36,6 +36,28 @@ export default function PortfolioSite() {
                     new version of the website. 
                 </p>
 
+                <h3 className="head2">Skills gained/reinforced:</h3>
+                <ul className='intro3'>
+                            <li>
+                                <p className='intro3'>ReactJS + Vite</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>HTML/CSS</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>Web hosting (using DNS)</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>Docker</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>CICD Pipelines</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>Git using WSL (Linux)</p>
+                            </li>
+                        </ul>
+
                 <h3 className="head2">Extras</h3>
                 <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/my-portfolio'>here</a> to view the source code on Github</p>
             </div>

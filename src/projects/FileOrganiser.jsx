@@ -39,6 +39,34 @@ export default function FileOrganiser() {
                             strong programming with files, so completing this really improved my confidence. 
                         </p>
 
+                        <h3 className="head2">Skills gained/reinforced:</h3>
+                        <ul className='intro3'>
+                            <li>
+                                <p className='intro3'>C#</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>File Systems</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>Tree Traversal Algorithms</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>Designing Menu Driven Interface</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>.NET Framework</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>YAML Files</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>Visual Studio 2022</p>
+                            </li>
+                            <li>
+                                <p className='intro3'>Git using WSL (Linux)</p>
+                            </li>
+                        </ul>
+
                         <h3 className="head2">Extras</h3>
                         <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/FileOrganizer/releases/download/v1.0/FileOrganizer.zip'>here</a> to download the File Organiser</p>
                         <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/FileOrganizer'>here</a> to view the source code on Github</p>

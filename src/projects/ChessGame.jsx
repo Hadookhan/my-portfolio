@@ -30,6 +30,8 @@ export default function ChessGame() {
                     <button className='projectButton'>Go To Website</button>
                     </form>
                 </div>
+                <p className="intro3"><b>NOTE: The backend service sometimes takes 1-2 minutes to bootup due to inactivity, 
+                which causes the chess board to take a while to render in.</b></p>
 
                 <h3 className="head2">Self-reflection</h3>
                 <p className="intro3">
@@ -40,10 +42,36 @@ export default function ChessGame() {
                 Also, from this project I learnt how to deploy web servers using <a className="homeLinks" href='https://vercel.com'>Vercel</a> and
                 backend API's using <a className="homeLinks" href='https://render.com'>Render</a>.
                 Still, there was a lot of improvements that could have been made to this project. 
-                Nonetheless, a massive improvement from the <Link className="homeLinks" to='/projects/blobGame'>Blob Game</Link>.<br></br> 
-                <b>PS: The backend service sometimes takes 1-2 minutes to bootup due to inactivity, 
-                which causes the chess board to take a while to render in.</b>
+                Nonetheless, a massive improvement from the <Link className="homeLinks" to='/projects/blobGame'>Blob Game</Link>.
                 </p>
+
+                <h3 className="head2">Skills gained/reinforced:</h3>
+                <ul className='intro3'>
+                    <li>
+                        <p className='intro3'>Python</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>ReactJS + Vite</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>Flask</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>Web hosting (using DNS)</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>Creating and hosting an API service</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>Websockets</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>HTML/CSS</p>
+                    </li>
+                    <li>
+                        <p className='intro3'>Git using WSL (Linux)</p>
+                    </li>
+                </ul>
 
                 <h3 className="head2">Extras</h3>
                 <p className="intro3">Click <a className='homeLinks' href='https://www.hadi-khan-chess.com'>here</a> to open the Chess site</p>

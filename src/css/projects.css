@@ -6,6 +6,12 @@
   margin-top: 120px; /* Make responsive */
 }
 
+.proj-image {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 600px) {
   .project-grid {
     grid-template-columns: 1fr; /* stack on smaller viewports */

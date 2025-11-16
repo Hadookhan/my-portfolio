@@ -25,14 +25,19 @@ export default function PortfolioSite() {
                     the idea of having a portfolio that I could also use as a 
                     showcased project. This project came after the <Link className="homeLinks" to='/projects/chessGame'>Chess Game</Link> I made, 
                     which was where I was first introduced to Javascript/React. This 
-                    improved my frontend and made it easier to create this portfolio. 
+                    improved my frontend beforehand and made it easier to create this portfolio. 
+                    I had also learnt how to deploy a web server from that project, 
+                    which also had a benefit when I had to deploy the server for this project.
                     This was also the first project I used alongside Docker, and also 
-                    error checked/autodeployed using CICD. I also learned this from the 
-                    <a className="homeLinks" href='https://www.Boot.dev'>BootDev</a> course. I implemented this 
-                    only to show that I could apply it, however autodeployment is really 
-                    useful for me as whenever I introduce a new implementation, each git push 
-                    automatically hosts the new version of the website. 
+                    error checked/autodeployed using CICD. I also learned this from the <a className="homeLinks" href='https://www.Boot.dev'>BootDev</a> course. 
+                    I implemented this mainly to show that I could apply it, 
+                    however autodeployment is really useful for this project, because whenever 
+                    I introduce a new implementation, each git push automatically hosts the 
+                    new version of the website. 
                 </p>
+
+                <h3 className="head2">Extras</h3>
+                <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/my-portfolio'>here</a> to view the source code on Github</p>
             </div>
         </section>
     );

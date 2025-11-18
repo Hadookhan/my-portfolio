@@ -4,7 +4,7 @@
         "created": "10/04/2024",
         "links": {
             "source": {
-                "url": "/projects/blobGame",
+                "url": "/projects/blob-game",
                 "text": "See more"
             },
             "access": {
@@ -13,7 +13,7 @@
             }
         },
         "category": {
-            "tag": "Finished",
+            "tag": "Complete",
             "colour": "#018f69"
         }
     },
@@ -22,7 +22,7 @@
         "created": "10/08/2024",
         "links": {
             "source": {
-                "url": "/projects/chessGame",
+                "url": "/projects/chess-game",
                 "text": "See more"
             },
             "access": {
@@ -36,11 +36,29 @@
         }
     },
     {
+        "name": "Maze Solver",
+        "created": "10/01/2025",
+        "links": {
+            "source": {
+                "url": "/projects/maze-solver",
+                "text": "See more"
+            },
+            "access": {
+                "url": "https://github.com/Hadookhan/Maze-Solver/releases/download/Complete/Maze-Solver-main.zip",
+                "text": "Download"
+            }
+        },
+        "category": {
+            "tag": "Complete",
+            "colour": "#018f69"
+        }
+    },
+    {
         "name": "Portfolio Site",
         "created": "03/05/2025",
         "links": {
             "source": {
-                "url": "/projects/portfolioSite",
+                "url": "/projects/portfolio-site",
                 "text": "See more"
             }
         },
@@ -72,7 +90,7 @@
         "created": "12/11/2025",
         "links": {
             "source": {
-                "url": "/projects/fileOrganiser",
+                "url": "/projects/file-organiser",
                 "text": "See more"
             },
             "access": {
@@ -81,7 +99,7 @@
             }
         },
         "category": {
-            "tag": "Finished",
+            "tag": "Complete",
             "colour": "#018f69"
         }
     },
@@ -90,7 +108,7 @@
         "created": "16/11/2025",
         "links": {
             "source": {
-                "url": "/projects/faceDetector",
+                "url": "/projects/face-detector",
                 "text": "See more"
             },
             "access": {
@@ -99,7 +117,7 @@
             }
         },
         "category": {
-            "tag": "Finished",
+            "tag": "Complete",
             "colour": "#018f69"
         }
     }

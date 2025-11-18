@@ -53,6 +53,15 @@
     margin-bottom: 0.5rem;
 }
 
+.head-fixing {
+    color: crimson;
+    font-size: 60px;
+    font-display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .homeLinks {
     color: aquamarine;
 }

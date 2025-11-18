@@ -102,6 +102,8 @@ export default function FileOrganiser() {
                         <h3 className="head2">Extras</h3>
                         <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/face-detection-ai/releases/download/v1.0/faceDetection.zip'>here</a> to download the Face detector program</p>
                         <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/face-detection-ai'>here</a> to view the source code on Github</p>
+
+                        <h3 className="head-fixing">CURRENTLY CANNOT RUN PROGRAM: FIXING</h3>
                     </div>
                 </section>
     );

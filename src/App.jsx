@@ -10,6 +10,7 @@ import BlobGame from './projects/BlobGame';
 import FileOrganiser from './projects/FileOrganiser';
 import PortoflioSite from './projects/PortfolioSite';
 import RobloxGame from './projects/RobloxGame';
+import FaceDetector from './projects/FaceDetector';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projects/fileOrganiser" element={<FileOrganiser />} />
           <Route path="/projects/portfolioSite" element={<PortoflioSite />} />
           <Route path="/projects/grow-a-family" element={<RobloxGame />} />
+          <Route path="/projects/faceDetector" element={<FaceDetector />} />
         </Routes>
     <Footer></Footer>
     </>

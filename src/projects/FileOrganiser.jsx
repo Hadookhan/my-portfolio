@@ -14,7 +14,7 @@ export default function FileOrganiser() {
             
                         <h3 className="head2">Description</h3>
                         <p className="intro3">
-                            A program which interacts with your local files. 
+                            A <b>PC ONLY</b> program which interacts with your local files. 
                             The user specifies the source directory and 
                             the target directory. After the user permits 
                             execution, all files from the source will move to the 

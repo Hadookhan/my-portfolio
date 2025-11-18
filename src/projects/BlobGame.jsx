@@ -16,7 +16,7 @@ export default function BlobGame() {
                 <p className="intro3">
                     A simple single-player game where the user moves their character 
                     around an area while dodging increasingly harder obstacles. The 
-                    objective is to collect as many coins as possible. 
+                    objective is to collect as many coins as possible. This game is <b>PC ONLY</b>.
                 </p>
 
                 <img

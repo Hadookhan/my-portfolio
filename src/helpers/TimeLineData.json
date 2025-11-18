@@ -84,6 +84,24 @@
             "tag": "Finished",
             "colour": "#018f69"
         }
+    },
+    {
+        "name": "Face Detector",
+        "created": "16/11/2025",
+        "links": {
+            "source": {
+                "url": "/projects/faceDetector",
+                "text": "See more"
+            },
+            "access": {
+                "url": "https://github.com/Hadookhan/face-detection-ai/releases/download/v1.0/faceDetection.zip",
+                "text": "Download"
+            }
+        },
+        "category": {
+            "tag": "Finished",
+            "colour": "#018f69"
+        }
     }
 
 ]

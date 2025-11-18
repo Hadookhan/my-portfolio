@@ -11,6 +11,7 @@ import FileOrganiser from './projects/FileOrganiser';
 import PortoflioSite from './projects/PortfolioSite';
 import RobloxGame from './projects/RobloxGame';
 import FaceDetector from './projects/FaceDetector';
+import MazeSolver from './projects/MazeSolver';
 
 function App() {
   return (
@@ -21,12 +22,13 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects/chessGame" element={<ChessGame />} />
-          <Route path="/projects/blobGame" element={<BlobGame />} />
-          <Route path="/projects/fileOrganiser" element={<FileOrganiser />} />
-          <Route path="/projects/portfolioSite" element={<PortoflioSite />} />
+          <Route path="/projects/chess-game" element={<ChessGame />} />
+          <Route path="/projects/blob-game" element={<BlobGame />} />
+          <Route path="/projects/file-organiser" element={<FileOrganiser />} />
+          <Route path="/projects/portfolio-site" element={<PortoflioSite />} />
           <Route path="/projects/grow-a-family" element={<RobloxGame />} />
-          <Route path="/projects/faceDetector" element={<FaceDetector />} />
+          <Route path="/projects/face-detector" element={<FaceDetector />} />
+          <Route path="/projects/maze-solver" element={<MazeSolver />} />
         </Routes>
     <Footer></Footer>
     </>

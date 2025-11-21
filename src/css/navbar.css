@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  background: #ffffff;
+  background-color: rgb(24, 23, 23);
   border-bottom: 1px solid #e5e7eb;
   z-index: 1;
 }
@@ -19,12 +19,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  background-color: rgb(24, 23, 23);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bolder;
-  color: #222;
+  color: #ffffff;
   text-decoration: none;
   border-style: solid;
   border-top: none;
@@ -33,20 +34,24 @@
   z-index: 999;
 }
 
+.nav-item {
+  color: #ffffff;
+}
+
 .logo:hover {
-  color: rgb(187, 54, 54);
+  color: rgb(119, 119, 119);
 }
 
 .nav-links a {
   margin-left: 1.5rem;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: rgb(187, 54, 54);
+  color: rgb(119, 119, 119);
 }
 
 .hamburger {

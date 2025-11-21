@@ -2,6 +2,7 @@ import '../css/timelineitem.css';
 import { Link } from 'react-router-dom';
 
 function TimelineItem({ data }) {
+  
   return (
     <div className="timeline-item">
       <div className="timeline-item-content">

@@ -64,12 +64,13 @@
 
 .homeLinks {
     color: aquamarine;
+    font-style: italic;
 }
 .contactLinks {
     color: coral;
 }
 
-.contact-row {
+div.contact-row {
   display: flex;
   align-items: center;
   margin-bottom: 8px;

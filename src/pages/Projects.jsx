@@ -14,13 +14,31 @@ function Projects() {
     <div>
       <h1 className="title">Projects</h1>
         <div className="page-content">
-          <h2 className="proj-timeline-title">Project Timeline</h2>
+          <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, type: "tween" }}
+              className='project-timeline-title'
+          >
+            <h2 className="proj-timeline-title">Project Timeline</h2>
+          </motion.div>
           <TimeLine />
 
-          <h2 className="proj-timeline-title">Top Projects</h2>
-          <ul className="project-grid">
-            {/* project cards will come here */}
-          </ul>
+          <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, type: "tween" }}
+              className='top-projects'
+          >
+            <h2 className="proj-timeline-title">Top Projects</h2>
+            <ul className="project-grid">
+              {/* project cards will come here */}
+            </ul>
+          </motion.div>
         </div>
     </div>
   );

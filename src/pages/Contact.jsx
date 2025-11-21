@@ -21,13 +21,6 @@ export default function Contact() {
     return (
         <div>
             <h1 className="title">Contact</h1>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                animate="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, type: "tween" }}
-            >
                 <div className="page-content">
                     <motion.div
                         variants={fadeInUp}
@@ -166,7 +159,6 @@ export default function Contact() {
                         </div>
                     </motion.div>
                 </div>
-            </motion.div>
         </div>
     );
 }

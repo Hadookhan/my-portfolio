@@ -56,6 +56,9 @@ export default function BlobGame() {
                         <p className='intro3'>Roblox UI/UX</p>
                     </li>
                     <li>
+                        <p className='intro3'>UI animation using Tween</p>
+                    </li>
+                    <li>
                         <p className='intro3'>Blender (3D Modelling)</p>
                     </li>
                 </ul>

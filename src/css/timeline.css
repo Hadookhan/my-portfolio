@@ -19,15 +19,27 @@
     width: 4px;
 }
 
+.timeline-row {
+    display: flex;
+}
+
+/* base item */
 .timeline-item {
     position: relative;
     display: flex;
-    justify-content: flex-end;
     padding: 20px 0;
     width: 50%;
 }
 
-.timeline-item:nth-child(odd) {
+/* LEFT side items */
+.timeline-row-left .timeline-item {
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-left: 0;
+}
+
+/* RIGHT side items */
+.timeline-row-right .timeline-item {
     align-self: flex-start;
     justify-content: flex-start;
     margin-left: 50%;

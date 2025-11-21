@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from "./components/ScrollToTop";
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
@@ -12,11 +13,13 @@ import PortoflioSite from './projects/PortfolioSite';
 import RobloxGame from './projects/RobloxGame';
 import FaceDetector from './projects/FaceDetector';
 import MazeSolver from './projects/MazeSolver';
+import CV from './extra/cv';
 
 function App() {
   return (
     <>
     <Navbar />
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
@@ -29,6 +32,7 @@ function App() {
           <Route path="/projects/grow-a-family" element={<RobloxGame />} />
           <Route path="/projects/face-detector" element={<FaceDetector />} />
           <Route path="/projects/maze-solver" element={<MazeSolver />} />
+          <Route path="/about/my-cv" element={<CV />} />
         </Routes>
     <Footer></Footer>
     </>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import emailLogo from '../assets/emailLogo.png';
 import githubLogo from '../assets/githubLogo.png';
 import linkedInLogo from '../assets/linkedInLogo.png';
+import headshot from '../assets/headshot.jpg';
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
                 transition={{ duration: 0.6, type: "tween" }}
                 className='home-intro'
                 >
-
+                    <img alt='Me' title='Me' src={headshot} className='headshot'></img>
                     <h2 className="introHead">Welcome to my portfolio!</h2>
                     <p className='intro'>Hey! My name is Hadi.<br></br>Check out my <Link className="homeLinks" to={"/projects"}>projects</Link> page!</p>
                 </motion.div>

@@ -1,5 +1,6 @@
 import '../css/default.css';
 import '../css/projects.css';
+import timelineData from '../helpers/TimeLineData.json';
 import TimeLine from '../helpers/TimeLine.jsx';
 import { motion } from "framer-motion";
 
@@ -24,7 +25,7 @@ function Projects() {
           >
             <h2 className="proj-timeline-title">Project Timeline</h2>
           </motion.div>
-          <TimeLine />
+          <TimeLine timelineData={timelineData} />
 
           <motion.div
               variants={fadeInUp}

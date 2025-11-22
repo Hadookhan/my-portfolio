@@ -24,7 +24,8 @@ export default function Home() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, type: "tween" }}
-                className='home-intro'>
+                className='home-intro'
+                >
 
                     <h2 className="introHead">Welcome to my portfolio!</h2>
                     <p className='intro'>Hey! My name is Hadi.<br></br>Check out my <Link className="homeLinks" to={"/projects"}>projects</Link> page!</p>
@@ -50,7 +51,8 @@ export default function Home() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, type: "tween" }}
-                className='home-contacts'>
+                className='home-contacts'
+                >
 
                     <h2 className="introHead">My Contacts!</h2>
                     {/* EMAIL CONTACT */}

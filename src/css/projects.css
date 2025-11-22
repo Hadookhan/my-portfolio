@@ -25,17 +25,24 @@
   display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+
   .project-grid {
     grid-template-columns: 1fr; /* stack on smaller viewports */
   }
+
+  .proj-timeline-title {
+      font-size: 9vw;
+  }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 650px) {
+
   .responsive-iframe-container {
     height: 60vh;
     width: 30vw;
   }  
+
 }
 
 .projectButton {

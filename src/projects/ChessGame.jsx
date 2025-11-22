@@ -42,7 +42,7 @@ export default function ChessGame() {
                 Also, from this project I learnt how to deploy web servers using <a className="homeLinks" href='https://vercel.com'>Vercel</a> and
                 backend API's using <a className="homeLinks" href='https://render.com'>Render</a>.
                 Still, there was a lot of improvements that could have been made to this project. 
-                Nonetheless, a massive improvement from the <Link className="homeLinks" to='/projects/blobGame'>Blob Game</Link>.
+                Nonetheless, a massive improvement from the <Link className="homeLinks" to='/projects/blob-game'>Blob Game</Link>.
                 </p>
 
                 <h3 className="head2">Skills gained/reinforced:</h3>

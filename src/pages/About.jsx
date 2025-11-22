@@ -151,7 +151,7 @@ export default function About() {
                         transition={{ duration: 0.6, type: "tween" }}
                         className='about-me-cv'
                     >
-                        <h2 className="head2">Click <Link to="/about/my-cv" className="source-link">here</Link> to view a copy of my CV</h2>
+                        <h2 className="head2">Click <Link to="/about/my-cv" className="homeLinks">here</Link> to view a copy of my CV</h2>
                     </motion.div>
                 </div>
         </div>

@@ -19,8 +19,8 @@ export default function Home() {
             <h1 className="title">Home</h1>
             <motion.div
                 variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
+                initial= {{ opacity: 0, y: 50 }}
+                whileInView= {{ opacity: 1, y: 10 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, type: "tween" }}
             >

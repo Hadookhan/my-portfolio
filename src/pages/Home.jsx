@@ -17,6 +17,15 @@ export default function Home() {
     return (
         <div>
             <h1 className="title">Home</h1>
+            <motion.div
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.6, type: "tween" }}
+            >
+                <img alt='Me' title='Me' src={headshot} className='headshot'></img>
+            </motion.div>
             <div className='page-content'>
                 {/* HOME INTRODUCTION PARAGRAPH */}
                 <motion.div
@@ -27,7 +36,6 @@ export default function Home() {
                 transition={{ duration: 0.6, type: "tween" }}
                 className='home-intro'
                 >
-                    <img alt='Me' title='Me' src={headshot} className='headshot'></img>
                     <h2 className="introHead">Welcome to my portfolio!</h2>
                     <p className='intro'>Hey! My name is Hadi.<br></br>Check out my <Link className="homeLinks" to={"/projects"}>projects</Link> page!</p>
                 </motion.div>

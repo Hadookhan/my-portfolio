@@ -23,7 +23,7 @@ export default function PortfolioSite() {
                     I initially made this portfolio because I needed a place to 
                     present myself. I thought of using apps like Wix, but I preferred 
                     the idea of having a portfolio that I could also use as a 
-                    showcased project. This project came after the <Link className="homeLinks" to='/projects/chessGame'>Chess Game</Link> I made, 
+                    showcased project. This project came after the <Link className="homeLinks" to='/projects/chess-game'>Chess Game</Link> I made, 
                     which was where I was first introduced to Javascript/React. This 
                     improved my frontend beforehand and made it easier to create this portfolio. 
                     I had also learnt how to deploy a web server from that project, 

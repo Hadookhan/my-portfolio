@@ -1,15 +1,13 @@
-import timelineData from './TimeLineData.json';
 import TimelineItem from './TimelineItem.jsx';
 import '../css/timeline.css';
 import { motion } from "framer-motion";
 
-function TimeLine() {
-
+function TimeLine({ timelineData }) {
   return (
     <div className="timeline-container">
       {timelineData.length > 0 &&
         timelineData.map((data, idx) => {
-          const side = idx % 2 === 0 ? "left" : "right";
+          const side = idx % 2 === 0 ? "right" : "left";
 
           return (
             <motion.div

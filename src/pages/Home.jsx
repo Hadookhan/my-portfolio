@@ -18,11 +18,10 @@ export default function Home() {
         <div>
             <h1 className="title">Home</h1>
             <motion.div
-                variants={fadeInUp}
                 initial= {{ opacity: 0, y: 50 }}
                 whileInView= {{ opacity: 1, y: 10 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, type: "tween" }}
+                viewport= {{ once: true, amount: 0.2 }}
+                transition= {{ duration: 0.6, type: "tween" }}
             >
                 <img alt='Me' title='Me' src={headshot} className='headshot'></img>
             </motion.div>

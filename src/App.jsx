@@ -13,6 +13,8 @@ import PortoflioSite from './projects/PortfolioSite';
 import RobloxGame from './projects/RobloxGame';
 import FaceDetector from './projects/FaceDetector';
 import MazeSolver from './projects/MazeSolver';
+import Chatbot from './projects/ChatBot';
+import NetworkIntelligence from './projects/NetworkIntelligence';
 import CV from './extra/cv';
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           <Route path="/projects/grow-a-family" element={<RobloxGame />} />
           <Route path="/projects/face-detector" element={<FaceDetector />} />
           <Route path="/projects/maze-solver" element={<MazeSolver />} />
+          <Route path="/projects/chat-bot" element={<Chatbot />} />
+          <Route path="/projects/network-intelligence" element={<NetworkIntelligence />} />
           <Route path="/about/my-cv" element={<CV />} />
         </Routes>
     <Footer></Footer>

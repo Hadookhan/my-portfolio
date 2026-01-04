@@ -31,8 +31,8 @@
             }
         },
         "category": {
-            "tag": "WIP",
-            "colour": "#f59b42"
+            "tag": "Incomplete",
+            "colour": "#f54242"
         }
     },
     {
@@ -119,6 +119,42 @@
         "category": {
             "tag": "Complete",
             "colour": "#018f69"
+        }
+    },
+    {
+        "name": "Chatbot app",
+        "created": "30/11/2025",
+        "links": {
+            "source": {
+                "url": "/projects/chat-bot",
+                "text": "See more"
+            },
+            "access": {
+                "url": "https://github.com/Hadookhan/chat-bot-app/releases/download/v1.1/Release.zip",
+                "text": "Download"
+            }
+        },
+        "category": {
+            "tag": "WIP",
+            "colour": "#f59b42"
+        }
+    },
+    {
+        "name": "Network Intelligence",
+        "created": "02/01/2026",
+        "links": {
+            "source": {
+                "url": "/projects/network-intelligence",
+                "text": "See more"
+            },
+            "access": {
+                "url": "https://github.com/Hadookhan/Network-intelligence",
+                "text": "Source Code"
+            }
+        },
+        "category": {
+            "tag": "WIP",
+            "colour": "#f59b42"
         }
     }
 

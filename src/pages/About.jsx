@@ -37,49 +37,46 @@ export default function About() {
                         transition={{ duration: 0.6, type: "tween" }}
                         className='about-me-story'
                     >
-                        <p className='intro2'>Here is a short story about me and how I got to where I am now:</p>
-
-                        <p className='aboutme1'>I was born and raised in Manchester, and have always 
-                            been fascinated in computers from a young age. I have always had passion 
-                            for programming but never had the determination, so I quit trying to learn 
-                            many times. I was also never interested in theory and always wanted to see 
-                            results, which really blindsighted me on how programming really was. This 
-                            also effected me academically, which resulted in me achieving much lower 
-                            grades than I was excpected. 
-                            <br></br><br></br>
-                            Nonetheless, I always tried to look at the bigger picture. By the time I was 
-                            in University, I wanted to change my life, so I decided to find ways to increase 
-                            my productivity. This is where I began my first project (<i><Link className="homeLinks" to='/projects/blob-game'>Blob Game</Link></i>).
-                            From this, I built a lot of motivation, despite not knowing how terrible I
-                            actually was at coding.
-                            <br></br><br></br>
-                            A few months later, I signed up to my first course (<i><a className="homeLinks" href='https://www.Boot.dev'>BootDev</a></i>). This is
-                            where I really begun my programming journey. I was investing hours every day programming, 
-                            and finally learning theory. Despite learning stuff that I found basic, I persisted 
-                            and reinforced that knowledge, and soon enough I was learning topics I had never crossed 
-                            before. It was by this time I decided to start my next project (<i><Link className="homeLinks" to='/projects/chess-game'>Chess</Link></i>).
-                            <br></br><br></br>
-                            Also, at this time I was learning algorithms, and didn't realise their importance 
-                            until up til now. I found a site called <i><a className="homeLinks" href='https://www.Leetcode.com'>Leetcode</a></i> and it made me quickly 
-                            realise that I needed desperate help. So, I began doing more research until I found 
-                            a new course (<i><a className="homeLinks" href='https://www.Neetcode.io'>Neetcode.io</a></i>). From this, I elevated my algorithm 
-                            knowledge and application twofold, and was now able to solve some <i><a className="homeLinks" href='https://www.Leetcode.com'>Leetcode</a></i> problems 
-                            independantly.
-                            <br></br><br></br>
-                            I was rapidly gaining more and more interest for Computer Science, and then I found 
-                            about AI. I suddenly grew more passion for ML (Machine Learning) as it involved Math 
-                            alongside coding. At this time I invested into the <i>Hands-On Machine Learning</i> book
-                            by <i>Aurélien Géron</i>. I learnt ML from the ground up using Python.
-                            <br></br><br></br>
-                            Present time; I have completed a few projects, and intend on completing many more. I 
-                            never gave up my passion and persisted through. I always told myself to compare against 
-                            myself to see true growth, and to never overthink. At this current point, I am loving 
-                            what im doing and want to do much more, for myself and for the world.
-                            <br></br><br></br>
-                            I hope this short story comes as help for anyone reading it. I appreciate you for spending 
-                            your time reading this section, and if you havent already, I hope you find your passion 
-                            how I did mine.
+                        <h2 className='intro2'>Who am I?</h2>
+                        <p className='aboutme1'>
+                            Hey! I'm Hadi 👋 
+                            An undergraduate in Computer Science, with a great passion for Machine 
+                            Learning, Deep Learning, and Mathematical proof.
+                            Compassionate for the people around me, I love engaging in group activities,
+                            especially ones bound to my interests!☺️
                         </p>
+
+                        <h2 className='intro2'>Short summary</h2>
+                            <p className='aboutme1'>
+                                To put it straight...
+                                I'm just a guy immersed in the beautiful creation of modern technology,
+                                pursuing a dream to revolutionise new discoveries for humanity.
+
+                                For a more brief summary: 
+                                I'm just a guy.
+                            </p>
+                        <h2 className='intro2'>My dream</h2>
+                            <p className='aboutme1'>
+                                
+                                <b>Admitting into MIT (My dream University)</b> 
+
+                                For the longest time I have invisioned myself studying my Masters in MIT.
+                                I plan to study a EECS Master of Science (SM), where I can carry out research
+                                in AI, specifically within Deep Learning. 
+                            
+                                I always think how young AI is in the scene of technology, and how much there
+                                is to explore, which is what motivates me to stay at the forefront.
+                            </p>
+                        <h2 className='intro2'>My purpose</h2>
+                            <p className='aboutme1'>
+                                
+                                <b>Research</b> 
+                                
+                                I love knowing how. It's always been curious to me how AI models learn (backpropagation),
+                                and how the math behind it works (I'm still learning). Having the full proof of an area
+                                uncovered is what interests me the most, which is why I want to pursue research to understand
+                                what more there is to prove.
+                            </p>
                     </motion.div>
 
                     <motion.div

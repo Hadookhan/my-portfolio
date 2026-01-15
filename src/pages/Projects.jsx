@@ -33,7 +33,7 @@ function Projects() {
       description:
         "A practical automation tool that organises files based on configurable rules—built for speed, reliability, and repeatable workflows.",
       tags: ["Python", "Automation", "YAML", "CLI"],
-      link: "https://github.com/Hadookhan/file-organizer",
+      link: "https://github.com/Hadookhan/FileOrganizer",
     },
   ];
 
@@ -41,7 +41,6 @@ function Projects() {
     <div>
       <div className="page-content">
 
-        {/* TOP PROJECTS FIRST */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -81,7 +80,6 @@ function Projects() {
           </ul>
         </motion.div>
 
-        {/* TIMELINE BELOW */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"

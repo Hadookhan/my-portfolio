@@ -44,14 +44,16 @@ export default function About() {
                         contribute to meaningful discoveries at the frontier of the discipline.
                     </p>
 
-                    <h2 className='intro2'>My purpose</h2>
+                    <h2 className='intro2'>Research Focus</h2>
                     <p className='aboutme1'>
-                        <b>Research and understanding</b><br /><br />
-                        I am driven by a desire to understand how and why things work. I am particularly interested in
-                        how learning algorithms operate, from backpropagation to optimisation, and in the mathematical
-                        reasoning behind them. Research appeals to me because it values depth, proof, and exploration,
-                        and allows unanswered questions to be pursued rigorously.
+                        <b>Machine Learning and Deep Learning</b><br /><br />
+                        I am particularly interested in understanding machine learning and deep learning models at a fundamental level.
+                        I regularly engage with research papers and technical blogs to deepen my understanding, especially where underlying
+                        assumptions may lack clarity or require stronger justification. This area of research strongly resonates with me,
+                        and I intend to pursue it further at the doctoral level in the future.
                     </p>
+
+
                 </motion.div>
 
                 <motion.div

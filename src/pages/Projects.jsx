@@ -31,7 +31,7 @@ function Projects() {
       title: "File Organizer",
       subtitle: "Rule-based file sorting with YAML-driven configuration",
       description:
-        "A practical automation tool that organises files based on configurable rules—built for speed, reliability, and repeatable workflows.",
+        "A practical automation tool that organises files based on configurable rules; built for speed, reliability, and repeatable workflows.",
       tags: ["Python", "Automation", "YAML", "CLI"],
       link: "https://github.com/Hadookhan/FileOrganizer",
     },

@@ -1,0 +1,110 @@
+.page-content-contact {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.title {
+    position: fixed;
+    display: flex;
+    top: 0;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 5rem;
+    color: white;
+    z-index: 998;
+    margin-left: 1rem;
+    border: solid 1px rgb(110, 110, 110);
+    padding: 7px;
+}
+
+.main-contacts-contact,
+.Socials-contact,
+.other-contact-contact {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem 1.25rem;
+  margin: 1rem 0;
+  backdrop-filter: blur(6px);
+}
+
+.introHead-contact {
+  color: aliceblue;
+  font-size: 44px;
+  text-align: left;
+  margin: 0 0 1rem;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.intro2-contact {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.contact-row-contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-row-contact:last-child {
+  border-bottom: none;
+  padding-bottom: 0.25rem;
+}
+
+.contact-icon-contact {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  filter: brightness(0.95);
+}
+
+.contactLinks-contact {
+  color: coral;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 127, 80, 0.6);
+  transition: border-bottom-color 0.15s ease, opacity 0.15s ease;
+}
+
+.contactLinks-contact:hover {
+  border-bottom-style: solid;
+  opacity: 0.95;
+}
+
+@media (max-width: 650px) {
+  .introHead-contact {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .main-contacts-contact,
+  .Socials-contact,
+  .other-contact-contact {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .contact-icon-contact {
+    width: 22px;
+    height: 22px;
+  }
+
+  .intro2-contact {
+    font-size: 3.9vw;
+    text-align: left;
+  }
+
+  .contact-row-contact {
+    gap: 10px;
+  }
+}

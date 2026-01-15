@@ -1,59 +1,133 @@
 import '../css/default.css';
-import '../css/projects.css';
-import '../css/home.css';
+import '../css/proj.css';
 import blobGame from '../assets/blobGame.png';
+import { motion } from "framer-motion";
 
 export default function BlobGame() {
 
-    return (
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 28 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const stagger = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.08,
+        delayChildren: 0.05,
+      }
+    }
+  };
+
+  return (
+    <div>
+        <h1 className="title">Project: Blob Game</h1>
         <section className="project">
-            <h1 className="title">Project: Blob Game</h1>
 
-            <div className="page-content">
-                <h2 className="introHead">Blob Game</h2>
+        <motion.div
+            className="page-content proj-page"
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+        >
 
-                <h3 className="head2">Description</h3>
-                <p className="intro3">
-                    A simple single-player game where the user moves their character 
-                    around an area while dodging increasingly harder obstacles. The 
-                    objective is to collect as many coins as possible. This game is <b>PC ONLY</b>.
-                </p>
+            {/* Header */}
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h2 className="proj-title">Blob Game</h2>
+            <p className="proj-subtitle">
+                A lightweight single-player arcade game built with Python + Pygame. <b>PC only.</b>
+            </p>
 
-                <img
-                    className="proj-img"
-                    src={blobGame}
-                    alt="Screenshot of the Blob Game project"
-                    title="Blob Game"
-                />
+            <div className="proj-cta-row">
+                <a
+                className="proj-btn primary"
+                href="https://github.com/Hadookhan/blob/releases/download/latest/blob-main.zip"
+                target="_blank"
+                rel="noreferrer"
+                >
+                Download ZIP
+                </a>
 
-                <h3 className="head2">Self-reflection</h3>
-                <p className="intro3">
-                    This was the first real coding project I started and completed, so the 
-                    code is very rough. However, it was a huge step for me and sparked my 
-                    interest in programming. Shortly after this project I joined bootcamp 
-                    courses and relearned everything from scratch. 
-                </p>
-
-                <h3 className="head2">Skills gained/reinforced:</h3>
-                <ul className='intro3'>
-                    <li>
-                        <p className='intro3'>Python</p>
-                    </li>
-                    <li>
-                        <p className='intro3'>Pygame</p>
-                    </li>
-                    <li>
-                        <p className='intro3'>2D game development</p>
-                    </li>
-                </ul>
-
-                <h3 className="head2">Extras</h3>
-                <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/blob/releases/download/latest/blob-main.zip'>here</a> to download the Blob Game</p>
-                <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/blob'>here</a> to view the source code on Github</p>
+                <a
+                className="proj-btn"
+                href="https://github.com/Hadookhan/blob"
+                target="_blank"
+                rel="noreferrer"
+                >
+                View Source
+                </a>
             </div>
-            
+            </motion.div>
 
+            <motion.div variants={fadeInUp} className="proj-card">
+            <img
+                className="proj-img"
+                src={blobGame}
+                alt="Screenshot of the Blob Game project"
+                title="Blob Game"
+            />
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Description</h3>
+            <p className="proj-text">
+                Blob Game is a simple arcade-style experience focused on core gameplay: movement, timing, and reaction speed.
+                The difficulty scales as you play, and the objective is to survive while collecting as many coins as possible.
+            </p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Tech Stack</h3>
+
+            <div className="tech-grid">
+                <div className="tech-category">
+                <p className="tech-label"><b>Language</b></p>
+                <div className="tech-icons">
+                    <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt="Python"
+                    title="Python"
+                    />
+                </div>
+                </div>
+
+                <div className="tech-category">
+                <p className="tech-label"><b>Framework / Library</b></p>
+                <div className="tech-icons">
+                    <img
+                    src="https://img.shields.io/badge/Pygame-1a1a1a?style=for-the-badge&logo=python&logoColor=white"
+                    alt="Pygame"
+                    title="Pygame"
+                    className="tech-badge"
+                    />
+                </div>
+                </div>
+
+                <div className="tech-category">
+                <p className="tech-label"><b>Focus</b></p>
+                <div className="tech-icons">
+                    <span className="tech-pill">2D Game Dev</span>
+                    <span className="tech-pill">Game Loop</span>
+                    <span className="tech-pill">Collision</span>
+                    <span className="tech-pill">Difficulty Scaling</span>
+                </div>
+                </div>
+            </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Self-reflection</h3>
+            <p className="proj-text">
+                This was the first project I completed end-to-end, so the code is rough compared to my newer work.
+                However, it was a major milestone — it taught me how to finish a full program, iterate quickly, and learn
+                through building. It also pushed me to strengthen my fundamentals through structured courses afterwards.
+            </p>
+            </motion.div>
+
+        </motion.div>
         </section>
-    );
-
+    </div>
+  );
 }

@@ -1,110 +1,198 @@
 import '../css/default.css';
-import '../css/projects.css';
-import '../css/home.css';
+import '../css/proj.css';
 import faceDetectionVideo from '../assets/face_detection_video.mp4';
+import { motion } from "framer-motion";
 
-export default function FileOrganiser() {
+export default function FaceDetector() {
 
-    return (
-        <section className="project">
-                    <h1 className="title">Project: Face Detector</h1>
-        
-                    <div className="page-content">
-                        <h2 className="introHead">Face Detector</h2>
-            
-                        <h3 className="head2">Description</h3>
-                        <p className="intro3">
-                            A <b>PC ONLY</b> program which accesses the camera app and 
-                            can identify a person by their face, and trace 
-                            it through the camera.
-                        </p>
-            
-                        <h3 className="head2">Video of Program</h3>
-                        <video
-                            className="proj-img"
-                            controls
-                            muted
-                        >
-                            <source src={faceDetectionVideo} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 28 },
+    visible: { opacity: 1, y: 0 },
+  };
 
-                        <h3 className="head2">HOW TO INSTALL & USE</h3>
-                        <p className='intro3'><b>!! Ensure a camera is enabled on the device before use !!</b></p>
-                        <ul className='intro3'>
-                            <li>
-                                <p className='intro3'>Download .zip folder - <a className='homeLinks' href='https://github.com/Hadookhan/face-detection-ai/releases/download/v1.0/faceDetection.zip'>here</a></p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Extract folder</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Locate <i>dataset/persons</i> folder</p>
-                                <ul className='intro3'>
-                                    <li>
-                                        <p className='intro3'>Create <i>dataset/persons</i> directory if it does not exist</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p className='intro3'>Insert full faced image of yourself into <i>dataset/persons</i></p>
-                            </li>
-                            <li>
-                                <p className='intro3'><b>Optional:</b> Rename <i>persons</i> folder to match content (e.g. Your name)</p>
-                            </li>
-                            <li>
-                                <p className='intro3'><b>(WINDOWS)</b> Click setup_and_run.ps1</p>
-                            </li>
-                            <li>
-                                <p className='intro3'><b>(UBUNTU LINUX)</b> Click setup_and_run.sh</p>
-                            </li>
-                        </ul>
-            
-                        <h3 className="head2">Self-reflection</h3>
-                        <p className="intro3">
-                            This is my first complete <b>AI</b> project! I was required to learn the 
-                            OpenCV module in Python to allow communication with the Camera app. 
-                            I orgininally used the face_recognition module alongside OpenCV, however 
-                            since face_recognition uses the dblib library, it made configuration really 
-                            difficult and contained a lot of outdated code. This firmed my option to stick 
-                            with OpenCV. I have used a Powershell and Shell script to automatically download 
-                            the projects dependencies; language, interpretor, libraries, etc, and run the 
-                            program on one click for Windows or Linux. I also learned how to use the pyenv 
-                            module which allowed me to set my local python version to an earlier state, 
-                            to allow compatibility with OpenCV.
-                        </p>
+  const stagger = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.08,
+        delayChildren: 0.05,
+      }
+    }
+  };
 
-                        <h3 className="head2">Skills gained/reinforced:</h3>
-                        <ul className='intro3'>
-                            <li>
-                                <p className='intro3'>Python</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>OpenCV</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Pyenv</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Python Virtual Environments</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Shell Commands</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Powershell Commands</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Git using WSL (Linux)</p>
-                            </li>
-                        </ul>
+  return (
+    <section className="project">
+      <h1 className="title">Project: Face Detector</h1>
 
-                        <h3 className="head2">Extras</h3>
-                        <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/face-detection-ai/releases/download/v1.0/faceDetection.zip'>here</a> to download the Face detector program</p>
-                        <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/face-detection-ai'>here</a> to view the source code on Github</p>
+      <motion.div
+        className="page-content proj-page"
+        variants={stagger}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
 
-                        <h3 className="head-fixing">CURRENTLY CANNOT RUN PROGRAM: FIXING</h3>
-                    </div>
-                </section>
-    );
+        {/* Header */}
+        <motion.div variants={fadeInUp} className="proj-card">
+          <h2 className="proj-title">Face Detector</h2>
+          <p className="proj-subtitle">
+            A <b>PC-only</b> computer vision project that uses a device camera to detect and track faces in real time.
+            Includes one-click setup scripts for Windows and Linux.
+          </p>
+
+          <div className="proj-cta-row">
+            <a
+              className="proj-btn primary"
+              href="https://github.com/Hadookhan/face-detection-ai/releases/download/v1.0/faceDetection.zip"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download ZIP
+            </a>
+
+            <a
+              className="proj-btn"
+              href="https://github.com/Hadookhan/face-detection-ai"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Source
+            </a>
+          </div>
+
+          {/* Status note */}
+          <div className="proj-alert">
+            <b>Status:</b> currently under maintenance — I'm fixing a runtime/setup issue and will update shortly.
+          </div>
+        </motion.div>
+
+        {/* Video */}
+        <motion.div variants={fadeInUp} className="proj-card">
+          <h3 className="proj-section-title">Demo video</h3>
+
+          <video className="proj-media" controls muted>
+            <source src={faceDetectionVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </motion.div>
+
+        {/* Description */}
+        <motion.div variants={fadeInUp} className="proj-card">
+          <h3 className="proj-section-title">Description</h3>
+          <p className="proj-text">
+            This project interfaces with the system camera and performs face detection/tracking using OpenCV.
+            I originally experimented with <i>face_recognition</i>, but dependency constraints (notably dlib) made
+            setup and portability difficult, so I rebuilt the pipeline around OpenCV for a cleaner installation path.
+          </p>
+        </motion.div>
+
+        {/* Tech Stack */}
+        <motion.div variants={fadeInUp} className="proj-card">
+          <h3 className="proj-section-title">Tech Stack</h3>
+
+          <div className="tech-grid">
+            <div className="tech-category">
+              <p className="tech-label"><b>Language</b></p>
+              <div className="tech-icons">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  title="Python"
+                />
+              </div>
+            </div>
+
+            <div className="tech-category">
+              <p className="tech-label"><b>Computer Vision</b></p>
+              <div className="tech-icons">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                  alt="OpenCV"
+                  title="OpenCV"
+                />
+              </div>
+            </div>
+
+            <div className="tech-category">
+              <p className="tech-label"><b>Environment & Tooling</b></p>
+              <div className="tech-icons">
+                <span className="tech-pill">pyenv</span>
+                <span className="tech-pill">venv</span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                  alt="Linux / WSL"
+                  title="Linux / WSL"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                  title="Git"
+                />
+              </div>
+            </div>
+
+            <div className="tech-category">
+              <p className="tech-label"><b>Setup Scripts</b></p>
+              <div className="tech-icons">
+                <span className="tech-pill">PowerShell</span>
+                <span className="tech-pill">Shell (bash)</span>
+                <span className="tech-pill">One-click installer</span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* How to install */}
+        <motion.div variants={fadeInUp} className="proj-card">
+          <h3 className="proj-section-title">Install & Use</h3>
+
+          <div className="proj-alert subtle">
+            <b>Requirement:</b> ensure a camera is enabled and accessible on the device before running.
+          </div>
+
+          <ol className="proj-steps">
+            <li>
+              Download the ZIP:{" "}
+              <a
+                className="homeLinks"
+                href="https://github.com/Hadookhan/face-detection-ai/releases/download/v1.0/faceDetection.zip"
+                target="_blank"
+                rel="noreferrer"
+              >
+                faceDetection.zip
+              </a>
+            </li>
+            <li>Extract the folder.</li>
+            <li>
+              Locate <i>dataset/persons</i>. If it doesn’t exist, create the directory.
+            </li>
+            <li>
+              Add a clear, front-facing image of yourself into <i>dataset/persons</i>.
+            </li>
+            <li>
+              (Optional) Rename the folder to match the person's name for clarity.
+            </li>
+            <li>
+              <b>Windows:</b> run <i>setup_and_run.ps1</i>
+            </li>
+            <li>
+              <b>Ubuntu/Linux:</b> run <i>setup_and_run.sh</i>
+            </li>
+          </ol>
+        </motion.div>
+
+        {/* Self-reflection */}
+        <motion.div variants={fadeInUp} className="proj-card">
+          <h3 className="proj-section-title">Self-reflection</h3>
+          <p className="proj-text">
+            This was my first complete computer vision project, and it taught me a lot about real-world dependency
+            management. I learned why certain libraries can be painful to install across platforms, and how to design
+            a more portable setup using scripts that bootstrap the environment automatically. I also used pyenv to pin
+            Python versions for compatibility when required.
+          </p>
+        </motion.div>
+
+      </motion.div>
+    </section>
+  );
 }

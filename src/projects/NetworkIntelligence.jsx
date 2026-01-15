@@ -42,6 +42,14 @@ export default function NetworkIntelligence() {
             <div className="proj-cta-row">
                 <a
                 className="proj-btn primary"
+                href="https://github.com/Hadookhan/Network-intelligence/releases/download/v1.3.2/main.exe"
+                target="_blank"
+                rel="noreferrer"
+                >
+                Download EXE
+                </a>
+                <a
+                className="proj-btn primary"
                 href="https://github.com/Hadookhan/Network-intelligence"
                 target="_blank"
                 rel="noreferrer"

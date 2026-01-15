@@ -22,7 +22,6 @@ export default function BlobGame() {
 
   return (
     <div>
-        <h1 className="title">Project: Blob Game</h1>
         <section className="project">
 
         <motion.div

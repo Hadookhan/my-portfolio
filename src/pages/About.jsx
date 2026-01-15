@@ -11,7 +11,6 @@ export default function About() {
 
     return (
         <div>
-            <h1 className="title">About Me</h1>
             <div className="page-content">
 
                 <motion.div
@@ -189,8 +188,11 @@ export default function About() {
                         <li><p className='intro3'>Certified First Aid (2023)</p></li>
                         <li>
                             <p className='intro3'>
-                                <a className="homeLinks" href='https://api.boot.dev/v1/users/public/39da1ec4-2b32-496e-830a-c99ecb6b38f7/thumbnail'>
-                                    Boot.dev Profile
+                                <a className="homeLinks"
+                                href='https://api.boot.dev/v1/users/public/39da1ec4-2b32-496e-830a-c99ecb6b38f7/thumbnail'
+                                target="_blank"
+                                rel="noreferrer">
+                                    Boot.dev profile card
                                 </a>
                             </p>
                         </li>

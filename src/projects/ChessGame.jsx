@@ -22,7 +22,6 @@ export default function ChessGame() {
 
   return (
     <div>
-        <h1 className="title">Project: Chess Game</h1>
         <section className="project">
 
         <motion.div

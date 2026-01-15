@@ -1,0 +1,82 @@
+.cv-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.cv-title {
+  margin: 0 0 0.4rem;
+  color: white;
+  font-size: 34px;
+  letter-spacing: 0.3px;
+}
+
+.cv-subtitle {
+  margin: 0 0 1rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  max-width: 80ch;
+}
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cv-btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.cv-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cv-btn.primary {
+  background: rgba(127, 255, 212, 0.18);
+  border-color: rgba(127, 255, 212, 0.35);
+}
+
+.cv-viewer-wrap {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1rem;
+  margin: 0 0 1.25rem;
+  backdrop-filter: blur(6px);
+}
+
+.cv-iframe {
+  width: 100%;
+  height: 82vh;
+  border: none;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.18);
+}
+
+.cv-fallback {
+  margin: 0.75rem 0 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .cv-title {
+    font-size: 8vw;
+  }
+  .cv-iframe {
+    height: 70vh;
+  }
+}

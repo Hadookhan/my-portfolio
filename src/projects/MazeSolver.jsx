@@ -22,7 +22,6 @@ export default function MazeSolver() {
 
   return (
     <div>
-        <h1 className="title">Guided Project: Maze Solver</h1>
         <section className="project">
 
         <motion.div

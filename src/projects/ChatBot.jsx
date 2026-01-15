@@ -22,7 +22,6 @@ export default function ChatbotApp() {
 
   return (
     <div>
-        <h1 className="title">Project: Chatbot App</h1>
         <section className="project">
 
         <motion.div

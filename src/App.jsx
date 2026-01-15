@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import ChessGame from './projects/ChessGame';
 import BlobGame from './projects/BlobGame';
 import FileOrganiser from './projects/FileOrganiser';
-import PortoflioSite from './projects/PortfolioSite';
+import PortfolioSite from './projects/PortfolioSite';
 import RobloxGame from './projects/RobloxGame';
 import FaceDetector from './projects/FaceDetector';
 import MazeSolver from './projects/MazeSolver';
@@ -30,7 +30,7 @@ function App() {
           <Route path="/projects/chess-game" element={<ChessGame />} />
           <Route path="/projects/blob-game" element={<BlobGame />} />
           <Route path="/projects/file-organiser" element={<FileOrganiser />} />
-          <Route path="/projects/portfolio-site" element={<PortoflioSite />} />
+          <Route path="/projects/portfolio-site" element={<PortfolioSite />} />
           <Route path="/projects/grow-a-family" element={<RobloxGame />} />
           <Route path="/projects/face-detector" element={<FaceDetector />} />
           <Route path="/projects/maze-solver" element={<MazeSolver />} />

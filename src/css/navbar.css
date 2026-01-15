@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 1.0rem 1.2rem;
+  padding: 0.7rem 1.2rem;
 }
 
 .nav-left {
@@ -27,7 +27,9 @@
 .nav-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 12px;
+  width: 100%;
 }
 
 .logo {
@@ -120,6 +122,7 @@
   cursor: pointer;
   padding: 10px;
   transition: background 0.15s ease, border-color 0.15s ease;
+  margin-left: auto;
 }
 
 .hamburger:hover {
@@ -191,5 +194,8 @@
   .title {
     font-size: 14px;
     padding: 5px 10px;
+  }
+  .nav-right {
+    width: 100%;
   }
 }

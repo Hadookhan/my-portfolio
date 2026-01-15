@@ -21,7 +21,6 @@ export default function NetworkIntelligence() {
 
   return (
     <div>
-        <h1 className="title">Project: Network Intelligence</h1>
         <section className="project">
 
         <motion.div

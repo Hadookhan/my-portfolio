@@ -22,7 +22,6 @@ export default function PortfolioSite() {
 
   return (
     <div>
-        <h1 className="title">Project: Portfolio Site</h1>
         <section className="project">
 
         <motion.div

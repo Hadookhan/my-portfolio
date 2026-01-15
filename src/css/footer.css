@@ -1,19 +1,80 @@
-html, body {
-  height: 100%;
-  margin: 0;
+.footer {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1.25rem 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
 }
 
-#root,   /* CRA root */
-body {
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.footer-brand {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 }
 
-.footer {
-    background-color: white;
+.footer-name {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0.3px;
 }
 
-main {
-  flex: 1; /* pushes footer down */
+.footer-tagline {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 42ch;
 }
 
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: color 0.15s ease;
+}
+
+.footer-link:hover {
+  color: aquamarine;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 1rem auto 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media (max-width: 650px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-nav {
+    gap: 10px;
+  }
+}

@@ -22,7 +22,6 @@ export default function RobloxGame() {
 
   return (
     <div>
-        <h1 className="title">Project: Roblox Game</h1>
         <section className="project">
 
         <motion.div

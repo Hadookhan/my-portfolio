@@ -22,7 +22,6 @@ export default function FaceDetector() {
 
   return (
     <section className="project">
-      <h1 className="title">Project: Face Detector</h1>
 
       <motion.div
         className="page-content proj-page"

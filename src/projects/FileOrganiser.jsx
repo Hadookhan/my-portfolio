@@ -22,7 +22,6 @@ export default function FileOrganiser() {
 
   return (
     <div>
-        <h1 className="title">Project: File Organiser</h1>
         <section className="project">
 
         <motion.div

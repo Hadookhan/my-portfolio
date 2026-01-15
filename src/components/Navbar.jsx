@@ -32,26 +32,26 @@ export default function Navbar() {
     exit: { opacity: 0, y: -8, height: 0 },
   };
 
-  const getPageTitle = () => {
-    const path = location.pathname;
+  // const getPageTitle = () => {
+  //   const path = location.pathname;
 
-    if (path === '/') return 'Home';
-    if (path === '/projects') return 'Projects';
-    if (path === '/about') return 'About';
-    if (path === '/contact') return 'Contact';
-    if (path === '/about/my-cv') return 'Curriculum Vitae';
+  //   if (path === '/') return 'Home';
+  //   if (path === '/projects') return 'Projects';
+  //   if (path === '/about') return 'About';
+  //   if (path === '/contact') return 'Contact';
+  //   if (path === '/about/my-cv') return 'Curriculum Vitae';
 
-    if (path.startsWith('/projects/blob-game')) return 'Project: Blob Game';
-    if (path.startsWith('/projects/network-intelligence')) return 'Project: Network Intelligence';
-    if (path.startsWith('/projects/file-organiser')) return 'Project: File Organiser';
-    if (path.startsWith('/projects/chatbot-app')) return 'Project: Chatbot App';
-    if (path.startsWith('/projects/maze-solver')) return 'Guided Project: Maze Solver';
-    if (path.startsWith('/projects/chess-game')) return 'Project: Chess Game';
-    if (path.startsWith('/projects/portfolio-site')) return 'Project: Portfolio Site';
-    if (path.startsWith('/projects/roblox-game')) return 'Project: Roblox Game';
+  //   if (path.startsWith('/projects/blob-game')) return 'Project: Blob Game';
+  //   if (path.startsWith('/projects/network-intelligence')) return 'Project: Network Intelligence';
+  //   if (path.startsWith('/projects/file-organiser')) return 'Project: File Organiser';
+  //   if (path.startsWith('/projects/chatbot-app')) return 'Project: Chatbot App';
+  //   if (path.startsWith('/projects/maze-solver')) return 'Guided Project: Maze Solver';
+  //   if (path.startsWith('/projects/chess-game')) return 'Project: Chess Game';
+  //   if (path.startsWith('/projects/portfolio-site')) return 'Project: Portfolio Site';
+  //   if (path.startsWith('/projects/roblox-game')) return 'Project: Roblox Game';
 
-    return 'Hadi Khan';
-  };
+  //   return 'Hadi Khan';
+  // };
 
   const linkClass = (path) => `nav-link ${location.pathname === path ? "active" : ""}`;
 
@@ -66,9 +66,9 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="nav-center">
+        {/* <div className="nav-center">
           <h1 className="title">{getPageTitle()}</h1>
-        </div>
+        </div> */}
 
         <div className="nav-right">
           <div className="nav-desktop">

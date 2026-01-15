@@ -12,24 +12,6 @@ export default function About() {
     return (
         <div>
             <div className="page-content">
-
-                <motion.div
-                    variants={fadeInUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 0.6, type: "tween" }}
-                    className='about-me-intro'
-                >
-                    <h2 className="introHead">About me</h2>
-                    <p className='intro3'>
-                        Hi, I'm Hadi — a second-year Computer Science undergraduate at Manchester Metropolitan University.
-                        I'm deeply interested in artificial intelligence and enjoy working on technically challenging problems
-                        that combine theory with practical implementation. I value collaboration, curiosity, and continuous
-                        learning, and I actively seek environments that push me to grow both academically and professionally.
-                    </p>
-                </motion.div>
-
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
@@ -40,7 +22,7 @@ export default function About() {
                 >
                     <h2 className='intro2'>Who am I?</h2>
                     <p className='aboutme1'>
-                        I am an undergraduate Computer Science student with a strong interest in Machine Learning,
+                        Hi, I'm Hadi — I am an undergraduate Computer Science student with a strong interest in Machine Learning,
                         Deep Learning, and the mathematical foundations that underpin modern AI systems.
                         I enjoy working in collaborative environments, discussing ideas, and tackling problems that
                         require both analytical thinking and creativity.
@@ -84,7 +66,6 @@ export default function About() {
 
                     <div className="tech-grid">
 
-                        {/* Languages */}
                         <div className="tech-category">
                         <p className="intro3"><b>Languages</b></p>
                         <div className="tech-icons">
@@ -96,7 +77,6 @@ export default function About() {
                         </div>
                         </div>
 
-                        {/* Frontend */}
                         <div className="tech-category">
                         <p className="intro3"><b>Frontend</b></p>
                         <div className="tech-icons">
@@ -106,7 +86,6 @@ export default function About() {
                         </div>
                         </div>
 
-                        {/* Backend */}
                         <div className="tech-category">
                         <p className="intro3"><b>Backend & APIs</b></p>
                         <div className="tech-icons">
@@ -116,7 +95,6 @@ export default function About() {
                         </div>
                         </div>
 
-                        {/* Databases */}
                         <div className="tech-category">
                         <p className="intro3"><b>Databases</b></p>
                         <div className="tech-icons">
@@ -126,7 +104,6 @@ export default function About() {
                         </div>
                         </div>
 
-                        {/* Data Science & ML */}
                         <div className="tech-category">
                         <p className="intro3"><b>Data Science & ML</b></p>
                         <div className="tech-icons">
@@ -138,7 +115,6 @@ export default function About() {
                         </div>
                         </div>
 
-                        {/* Cloud & DevOps */}
                         <div className="tech-category">
                         <p className="intro3"><b>Cloud & DevOps</b></p>
                         <div className="tech-icons">

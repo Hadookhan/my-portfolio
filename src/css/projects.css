@@ -1,62 +1,103 @@
-.project-grid li {
-  display: inline-block;
-  list-style: none;
-  margin-right: 10vw;
-  margin-bottom: 10vh;
-  margin-top: 120px; /* Make responsive */
-}
-
-.proj-timeline-title {
-    color: aliceblue;
-    font-size: 60px;
-    font-display: block;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 0.5rem;
-    margin-bottom: 0px;
-    font-family:'Courier New', Courier, monospace;
-}
-
-.proj-img {
-  max-width: 700px;
-  border-style: solid;
-  border-width: 2px;
-  height: auto;
-  display: block;
-}
-
-@media (max-width: 650px) {
-
-  .project-grid {
-    grid-template-columns: 1fr; /* stack on smaller viewports */
-  }
-
-  .proj-timeline-title {
-      font-size: 9vw;
-  }
-}
-
-@media (max-height: 650px) {
-
-  .responsive-iframe-container {
-    height: 60vh;
-    width: 30vw;
-  }  
-
-}
-
-.projectButton {
-  background-color:rgb(112, 185, 124);
-  border: solid 2px black;
-  font-style: oblique;
-  font-weight: bold;
-  color:black;
-  align-items: center;
-  align-content: center;
+/* Projects headings */
+.proj-section-title {
+  color: aliceblue;
+  font-size: 40px;
   text-align: center;
+  margin: 0 0 1rem;
+  letter-spacing: 0.4px;
 }
 
-.projectButton:hover {
-  cursor:pointer;
-  background-color: rgb(61, 99, 67);
+/* Top projects wrapper */
+.top-projects {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+/* Grid of project cards */
+.project-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* Individual card */
+.project-card {
+  background: rgba(0,0,0,0.14);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-card-title {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.project-card-subtitle {
+  margin: 0.25rem 0 0;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.45;
+}
+
+.project-card-description {
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.65;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tag {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* Link CTA */
+.project-link {
+  margin-top: auto;
+  text-decoration: none;
+  color: aquamarine;
+  border-bottom: 1px dotted rgba(127,255,212,0.6);
+  width: fit-content;
+}
+
+.project-link:hover {
+  border-bottom-style: solid;
+}
+
+/* Timeline section heading wrapper */
+.project-timeline-title {
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-section-title {
+    font-size: 32px;
+  }
 }

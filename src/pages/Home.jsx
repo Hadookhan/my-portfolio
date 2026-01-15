@@ -9,96 +9,126 @@ import { motion } from "framer-motion";
 
 export default function Home() {
 
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 40 },
-        visible: { opacity: 1, y: 0 },
-    };
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0 },
+  };
 
-    return (
-        <div>
-            <h1 className="title">Home</h1>
-            <motion.div
-                initial= {{ opacity: 0, y: 50 }}
-                whileInView= {{ opacity: 1, y: 10 }}
-                viewport= {{ once: true, amount: 0.2 }}
-                transition= {{ duration: 0.6, type: "tween" }}
-            >
-                <img alt='Me' title='Me' src={headshot} className='headshot'></img>
-            </motion.div>
-            <div className='page-content'>
-                {/* HOME INTRODUCTION PARAGRAPH */}
-                <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, type: "tween" }}
-                className='home-intro'
-                >
-                    <h2 className="introHead">Welcome to my portfolio!</h2>
-                    <p className='intro'>Hey! My name is Hadi.<br></br>Check out my <Link className="homeLinks" to={"/projects"}>projects</Link> page!</p>
-                </motion.div>
+  return (
+    <div>
+      <h1 className="title">Home</h1>
 
-                {/* HOME ABOUT-ME PARAGRAPH */}
-                <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, type: "tween" }}
-                className='home-about-me'>
+      <div className="page-content">
 
-                    <h2 className="introHead">About Me!</h2>
-                    <p className='intro2'>A second year student @ MMU<br></br>Studying a BSc Hons in Computer Science<br></br><Link className="homeLinks" to={"/about"}>Read More!</Link></p>
-                </motion.div>    
+        {/* HERO */}
+        <motion.section
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, type: "tween" }}
+          className="home-hero"
+        >
+          <div className="home-hero-left">
+            <h2 className="home-hero-title">Hadi Khan</h2>
+            <p className="home-hero-subtitle">
+              Computer Science (BSc Hons) · Manchester Metropolitan University
+            </p>
+            <p className="home-hero-body">
+              I build research-oriented software and intelligent systems — with a focus on
+              AI, deep learning foundations, and scalable engineering.
+            </p>
 
-                {/* HOME CONTACT PARAGRAPH */}
-                <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, type: "tween" }}
-                className='home-contacts'
-                >
-
-                    <h2 className="introHead">My Contacts!</h2>
-                    {/* EMAIL CONTACT */}
-                    <div className="contact-row">
-                        <img src={emailLogo} alt="Email" className="contact-icon" />
-                        <p className="intro2">
-                            Email -{" "}
-                            <a className="contactLinks" href="mailto:hadikhan05@hotmail.co.uk">
-                            hadikhan05@hotmail.co.uk
-                            </a>
-                        </p>
-                    </div>
-                    {/* GITHUB CONTACT */}
-                    <div className="contact-row">
-                        <img src={githubLogo} alt="GitHub" className="contact-icon" />
-                        <p className="intro2">
-                            GitHub -{" "}
-                            <a className="contactLinks" href="https://www.github.com/Hadookhan">
-                            github.com/Hadookhan
-                            </a>
-                        </p>
-                    </div>
-                    {/* LINKEDIN CONTACT */}
-                    <div className="contact-row">
-                        <img src={linkedInLogo} alt="LinkedIn" className="contact-icon" />
-                        <p className="intro2">
-                            LinkedIn -{" "}
-                            <a
-                            className="contactLinks"
-                            href="https://www.linkedin.com/in/hadi-khan-ab922229a"
-                            >
-                            linkedin.com/in/hadi-khan-ab922229a
-                            </a>
-                        </p>
-                    </div>
-                    <p className='intro2'>If you would like to get in contact, please reach out to me via email with any enquiries.<br></br><Link className="homeLinks" to={"/contact"}>Read More!</Link></p>
-                </motion.div>
+            <div className="home-hero-cta">
+              <Link to="/projects" className="home-btn primary">View Projects</Link>
+              <Link to="/about" className="home-btn">About Me</Link>
+              <Link to="/contact" className="home-btn">Contact</Link>
             </div>
-        </div>
-    );
+          </div>
+
+          <div className="home-hero-right">
+            <motion.img
+              initial={{ opacity: 0, scale: 0.96 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, type: "tween" }}
+              src={headshot}
+              alt="Hadi Khan headshot"
+              className="home-headshot"
+            />
+          </div>
+        </motion.section>
+
+        {/* HIGHLIGHTS */}
+        <motion.section
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, type: "tween", delay: 0.05 }}
+          className="home-section"
+        >
+          <h3 className="home-section-title">What I work on</h3>
+
+          <div className="home-grid">
+            <div className="home-card">
+              <h4 className="home-card-title">AI & Foundations</h4>
+              <p className="home-card-text">
+                Deep learning fundamentals, optimisation intuition, and building strong mathematical reasoning
+                to support research-led engineering.
+              </p>
+            </div>
+
+            <div className="home-card">
+              <h4 className="home-card-title">Full-Stack Systems</h4>
+              <p className="home-card-text">
+                Building production-style apps with modern tooling — APIs, databases, deployment, and clean UX.
+              </p>
+            </div>
+
+            <div className="home-card">
+              <h4 className="home-card-title">Networks & Analysis</h4>
+              <p className="home-card-text">
+                Network design and graph-style analysis to evaluate performance, resilience, and routing behaviour.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* FEATURED LINKS / QUICK CONTACT */}
+        <motion.section
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, type: "tween", delay: 0.1 }}
+          className="home-section"
+        >
+          <h3 className="home-section-title">Quick links</h3>
+
+          <div className="home-links">
+            <a className="home-link" href="mailto:hadikhan05@hotmail.co.uk">
+              <img src={emailLogo} alt="Email" className="home-link-icon" />
+              <span>Email</span>
+            </a>
+
+            <a className="home-link" href="https://www.github.com/Hadookhan" target="_blank" rel="noreferrer">
+              <img src={githubLogo} alt="GitHub" className="home-link-icon" />
+              <span>GitHub</span>
+            </a>
+
+            <a className="home-link" href="https://www.linkedin.com/in/hadi-khan-ab922229a" target="_blank" rel="noreferrer">
+              <img src={linkedInLogo} alt="LinkedIn" className="home-link-icon" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <p className="home-footnote">
+            For collaboration, research opportunities, or project enquiries, email is the best way to reach me.
+          </p>
+        </motion.section>
+
+      </div>
+    </div>
+  );
 }

@@ -1,68 +1,161 @@
 import '../css/default.css';
-import '../css/projects.css';
-import '../css/home.css';
+import '../css/proj.css';
 import mazeSolver from '../assets/mazeSolver.png';
+import { motion } from "framer-motion";
 
-export default function FileOrganiser() {
+export default function MazeSolver() {
 
-    return (
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 28 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const stagger = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.08,
+        delayChildren: 0.05,
+      }
+    }
+  };
+
+  return (
+    <div>
+        <h1 className="title">Guided Project: Maze Solver</h1>
         <section className="project">
-                    <h1 className="title">Guided Project: Maze Solver</h1>
-        
-                    <div className="page-content">
-                        <h2 className="introHead">Maze Solver</h2>
-            
-                        <h3 className="head2">Description</h3>
-                        <p className="intro3">
-                            A <b>PC ONLY</b> program which generates a randomized 
-                            maze and solves it using a DFS approach.
-                            <br></br>
-                            <b>NOTE: </b>This was a guided project from the <i><a className="homeLinks" href='https://www.Boot.dev'>BootDev</a></i> course.
-                        </p>
-            
-                        <img
-                            className="proj-img"
-                            src={mazeSolver}
-                            alt="Screenshot of the Maze Solver project"
-                            title="Completed Maze"
-                        />
-            
-                        <h3 className="head2">Self-reflection</h3>
-                        <p className="intro3">
-                            I completed this project straight after learning about 
-                            graph traversal algorithms (primarily DFS & BFS). I found 
-                            this project to be very useful as it really sharpened my 
-                            ability to use DFS. I also learnt how to use the <i>tkinter</i> tool 
-                            in Python, which I found awesome. 
-                            Big shoutout to <i><a className="homeLinks" href='https://www.Boot.dev'>BootDev</a></i> for 
-                            this amazing course!
-                        </p>
 
-                        <h3 className="head2">Skills gained/reinforced:</h3>
-                        <ul className='intro3'>
-                            <li>
-                                <p className='intro3'>Python</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Graph DFS</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>tkinter</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Testing</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Git using WSL (Linux)</p>
-                            </li>
-                        </ul>
+        <motion.div
+            className="page-content proj-page"
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+        >
 
-                        <h3 className="head2">Extras</h3>
-                        <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/Maze-Solver/releases/download/Complete/Maze-Solver-main.zip'>here</a> to download the File Organiser</p>
-                        <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/Maze-Solver'>here</a> to view the source code on Github</p>
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h2 className="proj-title">Maze Solver</h2>
+            <p className="proj-subtitle">
+                A <b>PC-only</b> Python program that generates a random maze and solves it using
+                Depth-First Search (DFS).
+            </p>
 
-                        <h3 className="head-fixing">CURRENTLY CANNOT RUN PROGRAM: FIXING</h3>
-                    </div>
-                </section>
-    );
+            <div className="proj-cta-row">
+                <a
+                className="proj-btn primary"
+                href="https://github.com/Hadookhan/Maze-Solver/releases/download/Complete/Maze-Solver-main.zip"
+                target="_blank"
+                rel="noreferrer"
+                >
+                Download ZIP
+                </a>
+
+                <a
+                className="proj-btn"
+                href="https://github.com/Hadookhan/Maze-Solver"
+                target="_blank"
+                rel="noreferrer"
+                >
+                View Source
+                </a>
+            </div>
+
+            <div className="proj-alert subtle">
+                <b>Note:</b> This was completed as a guided project through{" "}
+                <a className="homeLinks" href="https://www.boot.dev" target="_blank" rel="noreferrer">Boot.dev</a>,
+                and I used it to reinforce graph traversal fundamentals.
+            </div>
+
+            <div className="proj-alert">
+                <b>Status:</b> currently under maintenance — I'm fixing a runtime/setup issue and will update shortly.
+            </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <img
+                className="proj-img"
+                src={mazeSolver}
+                alt="Screenshot of the Maze Solver project"
+                title="Completed Maze"
+            />
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Description</h3>
+            <p className="proj-text">
+                The program builds a randomized maze and then solves it using DFS. The visual output helped me
+                internalise how traversal decisions affect exploration and backtracking. It also served as a good
+                introduction to building small visual tools in Python.
+            </p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Tech Stack</h3>
+
+            <div className="tech-grid">
+
+                <div className="tech-category">
+                <p className="tech-label"><b>Language</b></p>
+                <div className="tech-icons">
+                    <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt="Python"
+                    title="Python"
+                    />
+                </div>
+                </div>
+
+                <div className="tech-category">
+                <p className="tech-label"><b>Algorithms</b></p>
+                <div className="tech-icons">
+                    <span className="tech-pill">Depth-First Search (DFS)</span>
+                    <span className="tech-pill">Graph traversal</span>
+                </div>
+                </div>
+
+                <div className="tech-category">
+                <p className="tech-label"><b>UI / Visualisation</b></p>
+                <div className="tech-icons">
+                    <span className="tech-pill">tkinter</span>
+                </div>
+                </div>
+
+                <div className="tech-category">
+                <p className="tech-label"><b>Workflow</b></p>
+                <div className="tech-icons">
+                    <span className="tech-pill">Testing</span>
+                    <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                    alt="Git"
+                    title="Git"
+                    />
+                    <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                    alt="Linux / WSL"
+                    title="Linux / WSL"
+                    />
+                </div>
+                </div>
+
+            </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Self-reflection</h3>
+            <p className="proj-text">
+                I completed this right after learning graph traversal (DFS/BFS), and it was one of the first projects
+                where I felt the algorithm “click” through visual feedback. It strengthened my confidence applying DFS
+                in a practical setting and taught me how to connect algorithmic logic to a user-facing visualisation.
+            </p>
+
+            <p className="proj-text" style={{ marginTop: "0.9rem" }}>
+                It also introduced me to <i>tkinter</i> for simple GUI rendering, plus the value of writing tests to
+                keep behaviour reliable as the code evolves.
+            </p>
+            </motion.div>
+
+        </motion.div>
+        </section>
+    </div>
+  );
 }

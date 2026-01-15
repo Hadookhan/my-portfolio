@@ -1,0 +1,242 @@
+.project {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.proj-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.proj-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+.proj-title {
+  color: white;
+  margin: 0 0 0.25rem;
+  font-size: 42px;
+  letter-spacing: 0.4px;
+}
+
+.proj-subtitle {
+  margin: 0.2rem 0 1rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  max-width: 78ch;
+}
+
+.proj-section-title {
+  color: aliceblue;
+  margin: 0 0 0.6rem;
+  font-size: 26px;
+  letter-spacing: 0.2px;
+}
+
+.proj-text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.75;
+  font-size: 17px;
+  max-width: 78ch;
+}
+
+.proj-img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.proj-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.25rem;
+}
+
+.proj-btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.proj-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.proj-btn.primary {
+  background: rgba(127, 255, 212, 0.18);
+  border-color: rgba(127, 255, 212, 0.35);
+}
+
+.tech-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.tech-label {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 16px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.tech-icons img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: brightness(0.95);
+}
+
+.tech-icons img:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: brightness(1.1);
+}
+
+.tech-badge {
+  height: 34px !important;
+  width: auto !important;
+  border-radius: 10px;
+}
+
+.tech-pill {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.proj-iframe-wrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0,0,0,0.16);
+}
+
+.proj-iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  display: block;
+}
+
+.proj-media {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+  background: rgba(0,0,0,0.2);
+}
+
+.proj-alert {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  background: rgba(255, 200, 0, 0.10);
+  border: 1px solid rgba(255, 200, 0, 0.18);
+  color: rgba(255,255,255,0.92);
+  line-height: 1.6;
+}
+
+.proj-alert.subtle {
+  margin-top: 0.75rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.proj-steps {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.75;
+  font-size: 17px;
+  max-width: 78ch;
+}
+
+.proj-steps li {
+  margin: 0.35rem 0;
+}
+
+@media (max-width: 650px) {
+  .proj-steps {
+    font-size: 4vw;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .proj-iframe {
+    height: 420px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project {
+    padding: 1rem 0.9rem 2.5rem;
+  }
+
+  .proj-card {
+    padding: 1.05rem;
+    border-radius: 16px;
+  }
+
+  .proj-title {
+    font-size: 10vw;
+  }
+
+  .proj-section-title {
+    font-size: 6vw;
+  }
+
+  .proj-text,
+  .proj-subtitle {
+    font-size: 4vw;
+  }
+
+  .tech-icons img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .tech-badge {
+    height: 30px !important;
+  }
+}

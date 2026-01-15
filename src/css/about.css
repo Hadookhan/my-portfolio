@@ -1,8 +1,204 @@
-.about-me-intro {
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    object-fit: cover;
-    width: 25vw;
-    size: 12px;
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.title {
+    position: fixed;
+    display: flex;
+    top: 0;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 5rem;
+    color: white;
+    z-index: 998;
+    margin-left: 1rem;
+    border: solid 1px rgb(110, 110, 110);
+    padding: 7px;
+}
+
+.introHead {
+  color: aliceblue;
+  font-size: 56px;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.intro2 {
+  color: white;
+  font-size: 28px;
+  text-align: left;
+  margin: 2rem 0 0.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+.head2 {
+  color: aliceblue;
+  font-size: 40px;
+  text-align: left;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  letter-spacing: 0.4px;
+}
+
+.intro3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.7;
+  max-width: 75ch;
+  margin: 0.5rem auto 0;
+}
+
+.aboutme1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.75;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 75ch;
+  margin: 0 auto 1rem;
+}
+
+.about-me-intro,
+.about-me-story,
+.about-me-hobbies,
+.about-me-certificates,
+.about-me-cv {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem 1.25rem;
+  margin: 1rem 0;
+  backdrop-filter: blur(6px);
+}
+
+.about-me-cv {
+  text-align: left;
+}
+
+.about-me-hobbies ul,
+.about-me-certificates ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.75rem 0 0;
+}
+
+.about-me-hobbies li,
+.about-me-certificates li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-me-hobbies li:last-child,
+.about-me-certificates li:last-child {
+  border-bottom: none;
+}
+
+.about-me-hobbies .intro3,
+.about-me-certificates .intro3 {
+  margin: 0;
+}
+
+.homeLinks {
+  color: aquamarine;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(127, 255, 212, 0.6);
+}
+
+.homeLinks:hover {
+  border-bottom-style: solid;
+}
+
+.about-me-techstack {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.tech-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 1rem;
+}
+
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.tech-icons img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: brightness(0.95);
+}
+
+.tech-icons img:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 650px) {
+  .tech-icons img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 650px) {
+  .introHead {
+    font-size: 11vw;
+    text-align: center;
+  }
+
+  .intro2,
+  .head2,
+  .intro3,
+  .aboutme1 {
+    text-align: left;
+  }
+
+  .intro2 {
+    font-size: 5.5vw;
+  }
+
+  .head2 {
+    font-size: 8.5vw;
+  }
+
+  .intro3 {
+    font-size: 3.8vw;
+  }
+
+  .aboutme1 {
+    font-size: 3.6vw;
+  }
+
+  .about-me-intro,
+  .about-me-story,
+  .about-me-hobbies,
+  .about-me-certificates,
+  .about-me-cv {
+    padding: 1rem;
+    border-radius: 14px;
+  }
 }

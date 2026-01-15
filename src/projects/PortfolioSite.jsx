@@ -1,66 +1,126 @@
 import '../css/default.css';
-import '../css/projects.css';
-import '../css/home.css';
+import '../css/proj.css';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 export default function PortfolioSite() {
 
-    return (
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 28 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const stagger = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.08,
+        delayChildren: 0.05,
+      }
+    }
+  };
+
+  return (
+    <div>
+        <h1 className="title">Project: Portfolio Site</h1>
         <section className="project">
-            <h1 className="title">Project: Portfolio Site</h1>
-            <div className="page-content">
-                <h2 className="introHead">Porfolio (This Website)</h2>
 
-                <h3 className="head2">Description</h3>
-                <p className="intro3">
-                    The heart of all my work. I have self-programmed 
-                    my online portfolio, which showcases my broad technical 
-                    skills and allows people to find out more about me! 
-                </p>
+        <motion.div
+            className="page-content proj-page"
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+        >
 
-                <h3 className="head2">Self-reflection</h3>
-                <p className="intro3">
-                    I initially made this portfolio because I needed a place to 
-                    present myself. I thought of using apps like Wix, but I preferred 
-                    the idea of having a portfolio that I could also use as a 
-                    showcased project. This project came after the <Link className="homeLinks" to='/projects/chess-game'>Chess Game</Link> I made, 
-                    which was where I was first introduced to Javascript/React. This 
-                    improved my frontend beforehand and made it easier to create this portfolio. 
-                    I had also learnt how to deploy a web server from that project, 
-                    which also had a benefit when I had to deploy the server for this project.
-                    This was also the first project I used alongside Docker, and also 
-                    error checked/autodeployed using CICD. I also learned this from the <a className="homeLinks" href='https://www.Boot.dev'>BootDev</a> course. 
-                    I implemented this mainly to show that I could apply it, 
-                    however autodeployment is really useful for this project, because whenever 
-                    I introduce a new implementation, each git push automatically hosts the 
-                    new version of the website. 
-                </p>
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h2 className="proj-title">Portfolio (This Website)</h2>
+            <p className="proj-subtitle">
+                A custom-built portfolio to showcase my projects, skills, and progress — designed, implemented,
+                and deployed as an evolving engineering project.
+            </p>
 
-                <h3 className="head2">Skills gained/reinforced:</h3>
-                <ul className='intro3'>
-                            <li>
-                                <p className='intro3'>ReactJS + Vite</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>HTML/CSS</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Web hosting (using DNS)</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Docker</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>CICD Pipelines</p>
-                            </li>
-                            <li>
-                                <p className='intro3'>Git using WSL (Linux)</p>
-                            </li>
-                        </ul>
-
-                <h3 className="head2">Extras</h3>
-                <p className="intro3">Click <a className='homeLinks' href='https://github.com/Hadookhan/my-portfolio'>here</a> to view the source code on Github</p>
+            <div className="proj-cta-row">
+                <a
+                className="proj-btn primary"
+                href="https://github.com/Hadookhan/my-portfolio"
+                target="_blank"
+                rel="noreferrer"
+                >
+                View Source
+                </a>
+                <a className="proj-btn" href="https://yourdomain.com" target="_blank" rel="noreferrer">
+                Live Site (this)
+                </a>
+                
             </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Description</h3>
+            <p className="proj-text">
+                This portfolio is the central hub for my work. I built it from scratch instead of using a template
+                builder because I wanted complete control over the design, content, and deployment pipeline — and
+                to treat the site itself as a project that demonstrates real engineering practices.
+            </p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Tech Stack</h3>
+
+            <div className="tech-grid">
+
+                <div className="tech-category">
+                <p className="tech-label"><b>Frontend</b></p>
+                <div className="tech-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" title="Vite" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" />
+                </div>
+                </div>
+
+                <div className="tech-category">
+                <p className="tech-label"><b>DevOps & Workflow</b></p>
+                <div className="tech-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux / WSL" title="Linux / WSL" />
+                    <span className="tech-pill">CI/CD</span>
+                    <span className="tech-pill">Auto-deploy</span>
+                    <span className="tech-pill">DNS</span>
+                </div>
+                </div>
+
+            </div>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="proj-card">
+            <h3 className="proj-section-title">Self-reflection</h3>
+
+            <p className="proj-text">
+                I built this portfolio as a place to present my work clearly and professionally, but I also wanted it
+                to demonstrate my ability to build and ship software. After my{" "}
+                <Link className="homeLinks" to="/projects/chess-game">Chess Game</Link> project, I was more confident with
+                React and frontend structure, which made it easier to design this site cleanly.
+            </p>
+
+            <p className="proj-text" style={{ marginTop: "0.9rem" }}>
+                A key improvement here was integrating DevOps practices: I used Docker and a CI/CD pipeline so that every
+                push can trigger automated checks and deployment. This makes iteration fast and reliable, whenever I add
+                new projects or improvements, the site stays up-to-date without manual redeploys.
+            </p>
+
+            <p className="proj-text" style={{ marginTop: "0.9rem" }}>
+                Next improvements I would like to add include better performance optimisation (image/lazy loading),
+                instant messaging features, and optional analytics to understand which sections visitors find most useful. 
+                The analytics idea can tie in nicely with my ML path.
+            </p>
+            </motion.div>
+
+        </motion.div>
         </section>
-    );
+    </div>
+  );
 }

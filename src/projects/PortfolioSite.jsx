@@ -35,7 +35,7 @@ export default function PortfolioSite() {
             <motion.div variants={fadeInUp} className="proj-card">
             <h2 className="proj-title">Portfolio (This Website)</h2>
             <p className="proj-subtitle">
-                A custom-built portfolio to showcase my projects, skills, and progress — designed, implemented,
+                A custom-built portfolio to showcase my projects, skills, and progress; designed, implemented,
                 and deployed as an evolving engineering project.
             </p>
 
@@ -59,7 +59,7 @@ export default function PortfolioSite() {
             <h3 className="proj-section-title">Description</h3>
             <p className="proj-text">
                 This portfolio is the central hub for my work. I built it from scratch instead of using a template
-                builder because I wanted complete control over the design, content, and deployment pipeline — and
+                builder because I wanted complete control over the design, content, and deployment pipeline, and
                 to treat the site itself as a project that demonstrates real engineering practices.
             </p>
             </motion.div>

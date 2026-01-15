@@ -104,7 +104,8 @@ export default function NetworkIntelligence() {
                     <span className="tech-pill">Breadth-First Search (BFS)</span>
                     <span className="tech-pill">Depth-First Search (DFS)</span>
                     <span className="tech-pill">Shortest paths</span>
-                    <span className="tech-pill">Centrality metrics (Brandes')</span>
+                    <span className="tech-pill">Centrality metrics</span>
+                    <span className="tech-pill">Betweenness (Brandes')</span>
                 </div>
                 </div>
 

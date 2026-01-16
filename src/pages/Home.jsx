@@ -15,11 +15,8 @@ export default function Home() {
   };
 
   return (
-    <div>
-
       <div className="page-content">
 
-        {/* HERO */}
         <motion.section
           variants={fadeInUp}
           initial="hidden"
@@ -58,7 +55,6 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* HIGHLIGHTS */}
         <motion.section
           variants={fadeInUp}
           initial="hidden"
@@ -94,7 +90,6 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* FEATURED LINKS / QUICK CONTACT */}
         <motion.section
           variants={fadeInUp}
           initial="hidden"
@@ -128,6 +123,5 @@ export default function Home() {
         </motion.section>
 
       </div>
-    </div>
   );
 }

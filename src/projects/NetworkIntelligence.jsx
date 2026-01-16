@@ -36,6 +36,7 @@ export default function NetworkIntelligence() {
             <p className="proj-subtitle">
                 A research-oriented Python project that models computer networks as graphs and applies
                 algorithmic analysis to evaluate routing efficiency, resilience, and node importance.
+                This program is <b>PC ONLY</b>.
             </p>
 
             <div className="proj-cta-row">

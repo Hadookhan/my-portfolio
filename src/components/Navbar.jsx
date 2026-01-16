@@ -74,6 +74,7 @@ export default function Navbar() {
           <div className="nav-desktop">
             <Link to="/projects" className="nav-link">Projects</Link>
             <Link to="/about" className="nav-link">About</Link>
+            <Link to="/education" className="nav-link">Education</Link>
             <Link to="/contact" className="nav-link">Contact</Link>
             <Link to="/about/my-cv" className="nav-btn">CV</Link>
           </div>
@@ -106,6 +107,7 @@ export default function Navbar() {
           >
             <Link to="/projects" className={linkClass("/projects")}>Projects</Link>
             <Link to="/about" className={linkClass("/about")}>About</Link>
+            <Link to="/education" className={linkClass("/education")}>Education</Link>
             <Link to="/contact" className={linkClass("/contact")}>Contact</Link>
             <Link to="/about/my-cv" className="nav-btn mobile">CV</Link>
           </motion.div>

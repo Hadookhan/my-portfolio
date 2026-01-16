@@ -38,61 +38,59 @@ function Projects() {
   ];
 
   return (
-    <div>
-      <div className="page-content">
+    <div className="page-content">
 
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, type: "tween" }}
-          className="top-projects"
-        >
-          <h2 className="proj-section-title">Top Projects</h2>
+      <motion.div
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, type: "tween" }}
+        className="top-projects"
+      >
+        <h2 className="proj-section-title">Top Projects</h2>
 
-          <ul className="project-grid">
-            {topProjects.map((p) => (
-              <li key={p.title} className="project-card">
-                <div className="project-card-header">
-                  <h3 className="project-card-title">{p.title}</h3>
-                  <p className="project-card-subtitle">{p.subtitle}</p>
-                </div>
+        <ul className="project-grid">
+          {topProjects.map((p) => (
+            <li key={p.title} className="project-card">
+              <div className="project-card-header">
+                <h3 className="project-card-title">{p.title}</h3>
+                <p className="project-card-subtitle">{p.subtitle}</p>
+              </div>
 
-                <p className="project-card-description">{p.description}</p>
+              <p className="project-card-description">{p.description}</p>
 
-                <div className="project-tags">
-                  {p.tags.map((t) => (
-                    <span key={t} className="project-tag">{t}</span>
-                  ))}
-                </div>
+              <div className="project-tags">
+                {p.tags.map((t) => (
+                  <span key={t} className="project-tag">{t}</span>
+                ))}
+              </div>
 
-                <a
-                  className="project-link"
-                  href={p.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View on GitHub →
-                </a>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
+              <a
+                className="project-link"
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on GitHub →
+              </a>
+            </li>
+          ))}
+        </ul>
+      </motion.div>
 
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, type: "tween" }}
-          className="project-timeline-title"
-        >
-          <h2 className="proj-section-title">Project Timeline</h2>
-        </motion.div>
+      <motion.div
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, type: "tween" }}
+        className="project-timeline-title"
+      >
+        <h2 className="proj-section-title">Project Timeline</h2>
+      </motion.div>
 
-        <TimeLine timelineData={timelineData} />
-      </div>
+      <TimeLine timelineData={timelineData} />
     </div>
   );
 }

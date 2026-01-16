@@ -1,28 +1,14 @@
 .page-content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-.title {
-    position: fixed;
-    display: flex;
-    top: 0;
-    margin-top: 1rem;
-    text-align: center;
-    margin-right: 5rem;
-    color: white;
-    z-index: 998;
-    margin-left: 1rem;
-    border: solid 1px rgb(110, 110, 110);
-    padding: 7px;
+  padding: 4rem 1rem 3rem;
 }
 
 .introHead {
   color: aliceblue;
   font-size: 56px;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1.0rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
   letter-spacing: 0.5px;

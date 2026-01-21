@@ -7,7 +7,6 @@ export default function Education() {
     visible: { opacity: 1, y: 0 },
   };
 
-  // Update grades/modules whenever you want — this is the only place you edit.
   const education = [
     {
       school: "Manchester Metropolitan University (MMU)",
@@ -16,18 +15,18 @@ export default function Education() {
       modules: [
         {
           name: "Algorithms & Data Structures",
-          grade: "Predicting 86%",
-          desc: "Arrays, Stacks, Queues, Linked Lists, BS-Tress, Unit Tests, Graph Theory, C#, Visual Studio 2022.",
+          grade: "Predicted 86%",
+          desc: "Arrays, stacks, queues, linked lists, BSTs, unit testing, graph theory, C#, Visual Studio 2022.",
         },
         {
           name: "Computer Networks",
-          grade: "Predicting 89%",
-          desc: "OSI Model, TCP/IP Model, Cisco Packet Tracer, CIDR IP, RIP, VLANs, DHCP, UPD/TCP, SSH, Troubleshooting.",
+          grade: "Predicted 89%",
+          desc: "OSI & TCP/IP models, Cisco Packet Tracer, CIDR/subnetting, RIP, VLANs, DHCP, UDP/TCP, SSH, troubleshooting.",
         },
         {
           name: "Industry and Community Engagement",
-          grade: "Predicting 83%",
-          desc: "Attending and reflecting on Computer Science activities surrounding 5 areas: Course-in-context, Legal & Ethical, Employability, Social & Professional, Sustainability.",
+          grade: "Predicted 83%",
+          desc: "CS engagement across course-in-context, legal & ethical, employability, social & professional, and sustainability themes.",
         },
       ],
     },
@@ -44,15 +43,62 @@ export default function Education() {
         {
           name: "Graphic Design",
           grade: "B",
-          desc: "Photoshop, little photography, design patterns, creativity.",
+          desc: "Photoshop, photography basics, design principles, and creative workflows.",
         },
         {
           name: "Information Technology (Level 3 BTEC)",
-          grade: "Disctinction (D)",
-          desc: "Databases, Social media, Front-end developing.",
+          grade: "Distinction",
+          desc: "Databases, social media, and front-end development fundamentals.",
         },
       ],
     },
+  ];
+
+  const extracurricular = [
+    {
+      provider: "Harvard University (CS50 / edX)",
+      title: "CS50's Introduction to Artificial Intelligence with Python",
+      status: "In Progress (Verified Certificate Track)",
+      desc: "Foundational AI: search, optimisation, probabilistic reasoning, and learning algorithms, with an emphasis on implementation and reasoning.",
+      link: {
+        label: "Course",
+        url: "https://cs50.harvard.edu/ai/",
+      },
+      badge: "ACE credit-recommended",
+    },
+    {
+      provider: "Boot.dev",
+      title: "Backend Development Track",
+      status: "Completed (13 courses)",
+      desc: "Python (OOP/FP), Linux, Git, Docker, DSA, Go, HTTP clients, and guided projects applying the theory end-to-end.",
+      link: {
+        label: "Boot.dev profile",
+        url: "https://www.boot.dev/u/hadxr",
+      },
+      badge: "Hands-on, project-driven",
+    },
+    {
+      provider: "NeetCode",
+      title: "Algorithms & Data Structures",
+      status: "Ongoing",
+      desc: "LeetCode-style practice with DSA theory, system design, and SQL to strengthen problem-solving and time/space optimisation.",
+      link: {
+        label: "LEETCode profile",
+        url: "https://leetcode.com/u/Hadxr/",
+      },
+      badge: "Interview",
+    },
+    {
+      provider: "MIT OpenCourseWare",
+      title: "Independent Mathematical Study (MIT OCW)",
+      status: "Ongoing",
+      desc: "Study of MIT OCW materials including 18.01 (Single Variable Calculus), 18.02 (Multivariable Calculus), and selected linear algebra and optimisation topics relevant to machine learning.",
+      link: {
+        label: "MIT OpenCourseWare",
+        url: "https://ocw.mit.edu",
+      },
+      badge: "Independent study",
+    }
   ];
 
   return (
@@ -112,6 +158,55 @@ export default function Education() {
                   </ul>
                 </div>
               </details>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, type: "tween" }}
+          className="education-intro"
+        >
+          <h2 className="education-heading">Extracurricular Coursework</h2>
+          <p className="education-subheading">
+            Self-directed study alongside my degree to deepen my understanding of AI, algorithms, and systems.
+          </p>
+        </motion.div>
+
+        <div className="education-list">
+          {extracurricular.map((course) => (
+            <motion.div
+              key={course.title}
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, type: "tween" }}
+              className="education-card"
+            >
+              <div className="education-dropdown">
+                <div className="education-body">
+                  <div className="education-module-top">
+                    <span className="education-module-name">{course.title}</span>
+                    <span className="education-grade">{course.status}</span>
+                  </div>
+
+                  <p className="education-module-desc">
+                    <b>{course.provider}</b> — {course.desc}
+                  </p>
+
+                  <p className="education-note">
+                    <span className="education-note-badge">{course.badge}</span>
+                    {" · "}
+                    <a className="homeLinks" href={course.link.url} target="_blank" rel="noreferrer">
+                      {course.link.label}
+                    </a>
+                  </p>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>

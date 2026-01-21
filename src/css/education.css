@@ -175,11 +175,21 @@
 }
 
 .education-note {
-  margin: 0.9rem 0 0;
-  color: rgba(255, 255, 255, 0.70);
+  margin-top: 0.5rem;
   font-size: 13px;
-  line-height: 1.6;
+  color: rgba(127, 255, 212, 0.85);
 }
+
+.education-note-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(127, 255, 212, 0.30);
+  background: rgba(127, 255, 212, 0.12);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+}
+
 
 @media (max-width: 650px) {
   .education-heading {

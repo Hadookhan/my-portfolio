@@ -16,6 +16,7 @@ export default function Footer() {
         <nav className="footer-nav">
           <Link to="/projects" className="footer-link">Projects</Link>
           <Link to="/about" className="footer-link">About</Link>
+          <Link to="/education" className="footer-link">Education</Link>
           <Link to="/contact" className="footer-link">Contact</Link>
           <Link to="/about/my-cv" className="footer-link">CV</Link>
         </nav>

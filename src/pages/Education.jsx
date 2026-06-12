@@ -145,8 +145,9 @@ export default function Education() {
                   </div>
                 </summary>
 
-                <div className="education-body">
-                  <h3 className="education-section-title">Modules & Grades</h3>
+                  {item.modules?.length > 0 && (
+                  <div className="education-body">
+                    <h3 className="education-section-title">Modules & Grades</h3>
 
                   <ul className="education-modules">
                     {item.modules.map((m) => (
@@ -160,6 +161,7 @@ export default function Education() {
                     ))}
                   </ul>
                 </div>
+              )}
               </details>
             </motion.div>
           ))}

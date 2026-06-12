@@ -11,46 +11,49 @@ export default function Education() {
     {
       school: "Manchester Metropolitan University (MMU)",
       period: "BSc (Hons) Computer Science — 2023-Present",
-      highlight: "Current: Year 2 (Predicted: High First)",
+      highlight: "Current: Year 2 (81%)",
       modules: [
         {
           name: "Algorithms & Data Structures",
-          grade: "Predicted 86%",
+          grade: "81%",
           desc: "Arrays, stacks, queues, linked lists, BSTs, unit testing, graph theory, C#, Visual Studio 2022.",
         },
         {
           name: "Computer Networks",
-          grade: "Predicted 89%",
+          grade: "80%",
           desc: "OSI & TCP/IP models, Cisco Packet Tracer, CIDR/subnetting, RIP, VLANs, DHCP, UDP/TCP, SSH, troubleshooting.",
         },
         {
           name: "Industry and Community Engagement",
-          grade: "Predicted 83%",
+          grade: "76%",
           desc: "CS engagement across course-in-context, legal & ethical, employability, social & professional, and sustainability themes.",
+        },
+        {
+          name: "Operating Systems",
+          grade: "88%",
+          desc: "Processes/threads, concurrency (synchronisation, deadlock, ...), CPU scheduling, memory management, virtual memory, disk scheduling, file management",
+        },
+        {
+          name: "Thematic Project",
+          grade: "79%",
+          desc: "Worked inside a team of 6, developing a website which aids users in finding movies. My primary role was Backend Lead, working with React and Supabase",
+        },
+        {
+          name: "Software Development Processes",
+          grade: "75%",
+          desc: "Stakeholder identification, system requirement identification, system design, testing strategies, implementation/deployment, development methodologies, DevOps",
+        },
+        {
+          name: "Ethical Hacking",
+          grade: "86%",
+          desc: "Burpsuite, Kali, XSS, SQL & Prompt injection, Authentication, Authorisation, APIs",
         },
       ],
     },
     {
       school: "Holy Cross College",
       period: "College — 2021-2023",
-      highlight: "A-Levels / Level 3",
-      modules: [
-        {
-          name: "Computer Science",
-          grade: "D",
-          desc: "Programming fundamentals, computational thinking, and foundational systems concepts.",
-        },
-        {
-          name: "Graphic Design",
-          grade: "B",
-          desc: "Photoshop, photography basics, design principles, and creative workflows.",
-        },
-        {
-          name: "Information Technology (Level 3 BTEC)",
-          grade: "Distinction",
-          desc: "Databases, social media, and front-end development fundamentals.",
-        },
-      ],
+      highlight: "A-Levels",
     },
   ];
 
@@ -75,7 +78,7 @@ export default function Education() {
         label: "Boot.dev profile",
         url: "https://www.boot.dev/u/hadxr",
       },
-      badge: "Hands-on, project-driven",
+      badge: "Backend Engineering",
     },
     {
       provider: "NeetCode",
@@ -92,7 +95,7 @@ export default function Education() {
       provider: "MIT OpenCourseWare",
       title: "Independent Mathematical Study (MIT OCW)",
       status: "Ongoing",
-      desc: "Study of MIT OCW materials including 18.01 (Single Variable Calculus), 18.02 (Multivariable Calculus), and selected linear algebra and optimisation topics relevant to machine learning.",
+      desc: "Study of MIT OCW materials including 18.01 (Single Variable Calculus), 18.02 (Multivariable Calculus), 18.03 (Ordinary Differential Equations), 18.06 (Linear Algebra)",
       link: {
         label: "MIT OpenCourseWare",
         url: "https://ocw.mit.edu",

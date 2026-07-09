@@ -60,7 +60,7 @@ export default function Education() {
     {
       school: "Howest University of Applied Sciences",
       period: "Summer School — June-July 2026",
-      highlight: "14/20 (Distinction)",
+      highlight: "Grade: 14/20 (Distinction)",
       link: {
         label: "AI Summer School Transcript",
         url: howestTranscript,
@@ -172,6 +172,24 @@ export default function Education() {
                     ))}
                   </ul>
                 </div>
+              )}
+                  {!item.modules?.length && item.link && (
+                    <div className="education-body">
+                      <h3 className="education-section-title">Details</h3>
+
+                      <p className="education-module-desc">
+                        Successfully completed the AI Summer School at Howest University of Applied Sciences.
+                      </p>
+
+                      <a
+                        className="homeLinks"
+                        href={item.link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.link.label}
+                      </a>
+                    </div>
               )}
               </details>
             </motion.div>

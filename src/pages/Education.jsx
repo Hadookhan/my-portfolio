@@ -1,5 +1,7 @@
+import { link } from 'framer-motion/client';
 import '../css/education.css';
 import { motion } from "framer-motion";
+import howestTranscript from '../assets/howest_certificate.pdf';
 
 export default function Education() {
   const fadeInUp = {
@@ -54,6 +56,15 @@ export default function Education() {
       school: "Holy Cross College",
       period: "College — 2021-2023",
       highlight: "A-Levels",
+    },
+    {
+      school: "Howest University of Applied Sciences",
+      period: "Summer School — June-July 2026",
+      highlight: "14/20 (Distinction)",
+      link: {
+        label: "AI Summer School Transcript",
+        url: howestTranscript,
+      },
     },
   ];
 
